@@ -29,7 +29,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 # Theme
-THEME = 'themes/MinimalXY'
+THEME = 'themes/'
 
 # Theme customizations
 MINIMALXY_FAVICON = './images/extra/favicon.ico'
