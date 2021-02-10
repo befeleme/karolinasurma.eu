@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-09T21:11:00+01:00</updated><entry><title>What does it take to create a blog</title><link href="https://karolinasurma.eu/what-does-it-take-to-create-a-blog.html" rel="alternate"></link><published>2021-02-09T21:11:00+01:00</published><updated>2021-02-09T21:11:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-09:/what-does-it-take-to-create-a-blog.html</id><summary type="html">&lt;h2&gt;Why blogging?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;My old domain was unused for the last few years. I had little idea what to put there though.&lt;/li&gt;
+&lt;li&gt;Having a &lt;strong&gt;showcase&lt;/strong&gt; of the things I do which may be interesting for the other people. &lt;/li&gt;
+&lt;li&gt;I &lt;strong&gt;like to write&lt;/strong&gt; and miss it since I switched to tech. &lt;/li&gt;
+&lt;li&gt;There …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Why blogging?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;My old domain was unused for the last few years. I had little idea what to put there though.&lt;/li&gt;
+&lt;li&gt;Having a &lt;strong&gt;showcase&lt;/strong&gt; of the things I do which may be interesting for the other people. &lt;/li&gt;
+&lt;li&gt;I &lt;strong&gt;like to write&lt;/strong&gt; and miss it since I switched to tech. &lt;/li&gt;
+&lt;li&gt;There are all those tips from seniors to juniors about &lt;strong&gt;writing down the lists of what you've learnt&lt;/strong&gt;. 
+This makes sense as juniors tend to underestimate their progress in time.
+So I treat this as an opportunity to have some edulog, maybe helpful for others, maybe just for me.&lt;/li&gt;
+&lt;li&gt;And, of course, I just wanted to &lt;strong&gt;build something with my own hands&lt;/strong&gt;! Well, not from scratch in this case.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;To blog or HOW to blog - that is the question&lt;/h2&gt;
+&lt;p&gt;As a teenager I just created an account on Blogger and successfully blogged for another 10 years or longer. 
+Blogger belongs to Google now and will probably end in a few years.&lt;/p&gt;
+&lt;p&gt;And being a wannabe coder, well, you just kind of &lt;strong&gt;have to&lt;/strong&gt; create your own solution, isn't it right?
+I've been using Python for pretty much everything in the last three years. 
+Those, however, were just &lt;strong&gt;scripts&lt;/strong&gt;. 
+You run them with &lt;code&gt;python file.py&lt;/code&gt; and never actually get to build a whole solution.
+I felt like I lack the praxis on &lt;strong&gt;gluing things together&lt;/strong&gt;. 
+That seemed like a natural solution to build upon my Python knowledge.&lt;/p&gt;
+&lt;h3&gt;Django? Yes, but.&lt;/h3&gt;
+&lt;p&gt;How about Django? Django sounds cool! 
+And I've been to a &lt;a href="https://tutorial.djangogirls.org/en/"&gt;Django Girls workshop&lt;/a&gt;, so this couldn't be that complicated, could it? 
+I spent a great time playing with a web application in Django. I really have! 
+There is a &lt;em&gt;Postgres database&lt;/em&gt;, those cool &lt;em&gt;Jinja templates&lt;/em&gt;, I even used &lt;em&gt;Bootstrap&lt;/em&gt; to make the site responsive, wrote a nice &lt;em&gt;admin interface&lt;/em&gt; and made it possible to use &lt;em&gt;Markdown&lt;/em&gt; in the blog posts. &lt;/p&gt;
+&lt;p&gt;Then I realised I need &lt;em&gt;categories&lt;/em&gt; and plenty of other changes that will require more time spent digging in application models and Jinja.
+I started reading about deployment and went through what &lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt; has to offer.&lt;/p&gt;
+&lt;p&gt;I learned about the &lt;code&gt;DJANGO_SECRET_KEY&lt;/code&gt; when I published the code of my app on GitHub and immediately got a warning e-mail that I've compromised something important.&lt;/p&gt;
+&lt;p&gt;The time has passed and I wasn't any closer to having the actual website out there. 
+In fact it felt like learning programming: &lt;strong&gt;with each step I was even further from my goal as I realised how much more I need to learn to make it happen&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Static and simple&lt;/h3&gt;
+&lt;p&gt;I went to look for something more down-to-earth. 
+I remembered &lt;a href="https://roboprojekt.pyladies.cz/"&gt;our project's blog&lt;/a&gt; which was on the other side of the complexity spectrum: there were Markdown blog posts and deployment on commit on GitHub. 
+No databases, minimum code, static site - suddenly this sounded so beautifully simple!
+Why to overcomplicate things?
+I took a long look at the other blog and realized it was built on the extension to &lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; engine, which is written in Python. 
+I looked also at Jekyll and later Hugo, but decided to stick to what seemed like a nice case of &lt;em&gt;gluing&lt;/em&gt; task I intended to perform.&lt;/p&gt;
+&lt;h2&gt;Pelican&lt;/h2&gt;
+&lt;p&gt;First things first: I went through all the &lt;a href="http://www.pelicanthemes.com/"&gt;Pelican themes&lt;/a&gt;. I was looking for something minimalistic yet pretty with a support of categories and optionally tags. 
+That was surprisingly tough task.
+One of the last on the list was &lt;a href="https://github.com/petrnohejl/MinimalXY"&gt;MinimalXY&lt;/a&gt; by Petr Nohejl (funnily enough, a developer from Brno) which I felt in love with as soon as I saw it. &lt;/p&gt;
+&lt;p&gt;So I was decided and could frantically start with edits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;deleting plenty of code I didn't want. That was a nice excersize in reading someone else's code. &lt;/li&gt;
+&lt;li&gt;removing Google Analytics related code for now as I'm not sure I want to track anything here.&lt;/li&gt;
+&lt;li&gt;installing the Open Sans font locally rather than fetching it from Google Fonts. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Out there&lt;/h2&gt;
+&lt;p&gt;I was never inclined to frontend and have limited knowledge about its technologies. 
+The edits I've made were nice small tasks forcing me to look for explanations around the Internet. 
+It makes me still a bit uneasy that I don't understand everything in the project.&lt;/p&gt;
+&lt;p&gt;Inspired by Honza Javorek's &lt;a href="https://github.com/honzajavorek/honzajavorek.cz/blob/master/weeknotes.py"&gt;weeknotes script&lt;/a&gt; I made a template generator to make it easier to add new posts. Thanks!
+Many other inspirations come from the open source projects on GitHub. 
+I took a look at deployment routines, went through some people's configurations and repository structures. &lt;/p&gt;
+&lt;p&gt;And all of this crash course took place in around a week.
+This time I feel like a winner :).&lt;/p&gt;</content><category term="Blogging"></category><category term="pelican"></category><category term="coding"></category><category term="EN"></category></entry></feed>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>What does it take to create a blog &ndash; A blog</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Karo" />
+    <meta property="article:section" content="Blogging" />
+    <meta property="article:published_time" content="2021-02-09" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="What does it take to create a blog"/>
+    <meta property="og:description" content="Why blogging? My old domain was unused for the last few years. I had little idea what to put there though. Having a showcase of the things I do which may be interesting for the other people. I like to write and miss it since I switched to tech. There …"/>
+    <meta property="og:site_name" content="A blog" />
+    <meta property="og:url" content="https://karolinasurma.eu/what-does-it-take-to-create-a-blog.html"/>
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://karolinasurma.eu/feeds/all.atom.xml" title="A blog Atom Feed" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/opensans.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/pygments-highlight-github.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://karolinasurma.eu/./images/extra/favicon.ico">
+
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://karolinasurma.eu/" id="header-logo" title="Home">KS</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>What does it take to create a blog</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2021-02-09T21:11:00+01:00">Tue 09 February 2021</time> in <a href="https://karolinasurma.eu/category/blogging.html" title="All articles in category Blogging">Blogging</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/pelican.html" title="All articles with Pelican tag">#pelican</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/coding.html" title="All articles with Coding tag">#coding</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/en.html" title="All articles with En tag">#EN</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <h2>Why blogging?</h2>
+<ul>
+<li>My old domain was unused for the last few years. I had little idea what to put there though.</li>
+<li>Having a <strong>showcase</strong> of the things I do which may be interesting for the other people. </li>
+<li>I <strong>like to write</strong> and miss it since I switched to tech. </li>
+<li>There are all those tips from seniors to juniors about <strong>writing down the lists of what you've learnt</strong>. 
+This makes sense as juniors tend to underestimate their progress in time.
+So I treat this as an opportunity to have some edulog, maybe helpful for others, maybe just for me.</li>
+<li>And, of course, I just wanted to <strong>build something with my own hands</strong>! Well, not from scratch in this case.</li>
+</ul>
+<h2>To blog or HOW to blog - that is the question</h2>
+<p>As a teenager I just created an account on Blogger and successfully blogged for another 10 years or longer. 
+Blogger belongs to Google now and will probably end in a few years.</p>
+<p>And being a wannabe coder, well, you just kind of <strong>have to</strong> create your own solution, isn't it right?
+I've been using Python for pretty much everything in the last three years. 
+Those, however, were just <strong>scripts</strong>. 
+You run them with <code>python file.py</code> and never actually get to build a whole solution.
+I felt like I lack the praxis on <strong>gluing things together</strong>. 
+That seemed like a natural solution to build upon my Python knowledge.</p>
+<h3>Django? Yes, but.</h3>
+<p>How about Django? Django sounds cool! 
+And I've been to a <a href="https://tutorial.djangogirls.org/en/">Django Girls workshop</a>, so this couldn't be that complicated, could it? 
+I spent a great time playing with a web application in Django. I really have! 
+There is a <em>Postgres database</em>, those cool <em>Jinja templates</em>, I even used <em>Bootstrap</em> to make the site responsive, wrote a nice <em>admin interface</em> and made it possible to use <em>Markdown</em> in the blog posts. </p>
+<p>Then I realised I need <em>categories</em> and plenty of other changes that will require more time spent digging in application models and Jinja.
+I started reading about deployment and went through what <a href="https://www.heroku.com/">Heroku</a> has to offer.</p>
+<p>I learned about the <code>DJANGO_SECRET_KEY</code> when I published the code of my app on GitHub and immediately got a warning e-mail that I've compromised something important.</p>
+<p>The time has passed and I wasn't any closer to having the actual website out there. 
+In fact it felt like learning programming: <strong>with each step I was even further from my goal as I realised how much more I need to learn to make it happen</strong>.</p>
+<h3>Static and simple</h3>
+<p>I went to look for something more down-to-earth. 
+I remembered <a href="https://roboprojekt.pyladies.cz/">our project's blog</a> which was on the other side of the complexity spectrum: there were Markdown blog posts and deployment on commit on GitHub. 
+No databases, minimum code, static site - suddenly this sounded so beautifully simple!
+Why to overcomplicate things?
+I took a long look at the other blog and realized it was built on the extension to <a href="https://blog.getpelican.com/">Pelican</a> engine, which is written in Python. 
+I looked also at Jekyll and later Hugo, but decided to stick to what seemed like a nice case of <em>gluing</em> task I intended to perform.</p>
+<h2>Pelican</h2>
+<p>First things first: I went through all the <a href="http://www.pelicanthemes.com/">Pelican themes</a>. I was looking for something minimalistic yet pretty with a support of categories and optionally tags. 
+That was surprisingly tough task.
+One of the last on the list was <a href="https://github.com/petrnohejl/MinimalXY">MinimalXY</a> by Petr Nohejl (funnily enough, a developer from Brno) which I felt in love with as soon as I saw it. </p>
+<p>So I was decided and could frantically start with edits:</p>
+<ul>
+<li>deleting plenty of code I didn't want. That was a nice excersize in reading someone else's code. </li>
+<li>removing Google Analytics related code for now as I'm not sure I want to track anything here.</li>
+<li>installing the Open Sans font locally rather than fetching it from Google Fonts. </li>
+</ul>
+<h2>Out there</h2>
+<p>I was never inclined to frontend and have limited knowledge about its technologies. 
+The edits I've made were nice small tasks forcing me to look for explanations around the Internet. 
+It makes me still a bit uneasy that I don't understand everything in the project.</p>
+<p>Inspired by Honza Javorek's <a href="https://github.com/honzajavorek/honzajavorek.cz/blob/master/weeknotes.py">weeknotes script</a> I made a template generator to make it easier to add new posts. Thanks!
+Many other inspirations come from the open source projects on GitHub. 
+I took a look at deployment routines, went through some people's configurations and repository structures. </p>
+<p>And all of this crash course took place in around a week.
+This time I feel like a winner :).</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="https://karolinasurma.eu"><img class="avatar" src="./images/extra/karo.jpg" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px;">
+                  <a href="https://karolinasurma.eu"><span id="author-name" class="w3-hover-text-dark-grey">Karo</span></a>
+                  <p id="author-story">Hi there! I’m Karo. Whenever not computering, I read yet another book or hike through South Moravia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2021          Karo
+ | <a href="https://karolinasurma.eu/feeds/all.atom.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+  </body>
+</html>
