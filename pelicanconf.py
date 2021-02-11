@@ -37,10 +37,10 @@ MINIMALXY_START_YEAR = 2021
 MINIMALXY_CURRENT_YEAR = date.today().year
 
 # Author
-AUTHOR_INTRO = u'Karo. PyLadies & Python. Languages. Moravia'
+AUTHOR_INTRO = u'Karo. PyLadies & Python. Languages. Moravia.'
 AUTHOR_DESCRIPTION = u'Hi there! I’m Karo. Whenever not computering, I read yet another book or hike through South Moravia.'
 AUTHOR_AVATAR = './images/extra/karo.jpg'
-AUTHOR_WEB = 'https://karolinasurma.eu'
+AUTHOR_WEB = 'mailto:w_oczekiwaniu[at]interia.pl'
 
 
 # Social
