@@ -32,7 +32,7 @@ The app is connected to a &lt;em&gt;Postgres database&lt;/em&gt;, uses those coo
 I started reading about deployment and went through what &lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt; has to offer.&lt;/p&gt;
 &lt;p&gt;I learned about the &lt;code&gt;DJANGO_SECRET_KEY&lt;/code&gt; when I published the code of my app on GitHub and immediately got a warning e-mail that I've compromised something important.&lt;/p&gt;
 &lt;p&gt;The time has passed and I wasn't any closer to having the actual website out there. 
-In fact it felt like learning programming: &lt;strong&gt;with each step I was even further from my goal as I realised how much more I need to learn to make it happen&lt;/strong&gt;.&lt;/p&gt;
+In fact it felt like learning programming: &lt;strong&gt;with each step I was even further from my goal as I realized how much more I need to learn to make it happen&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;Static and simple&lt;/h3&gt;
 &lt;p&gt;I went to look for something more down-to-earth. 
 I remembered &lt;a href="https://roboprojekt.pyladies.cz/"&gt;our project's blog&lt;/a&gt; which was on the other side of the complexity spectrum: there were Markdown blog posts and deployment on commit on GitHub. 
