@@ -28,7 +28,7 @@ It seemed like a natural solution to build upon my Python knowledge.&lt;/p&gt;
 And I've been to a &lt;a href="https://tutorial.djangogirls.org/en/"&gt;Django Girls workshop&lt;/a&gt;, so this couldn't be that complicated, could it? 
 I've spent a great time playing with a web application in Django. I really have! 
 The app is connected to a &lt;em&gt;Postgres database&lt;/em&gt;, uses those cool &lt;em&gt;Jinja templates&lt;/em&gt;, I even used &lt;em&gt;Bootstrap&lt;/em&gt; to make the site responsive, wrote a nice &lt;em&gt;admin interface&lt;/em&gt; and made it possible to use &lt;em&gt;Markdown&lt;/em&gt; in the blog posts. &lt;/p&gt;
-&lt;p&gt;Then I realised I need &lt;em&gt;categories&lt;/em&gt; and plenty of other changes that will require more time spent digging in application models and Jinja.
+&lt;p&gt;Then I realized I need &lt;em&gt;categories&lt;/em&gt; and plenty of other changes that will require more time spent digging in application models and Jinja.
 I started reading about deployment and went through what &lt;a href="https://www.heroku.com/"&gt;Heroku&lt;/a&gt; has to offer.&lt;/p&gt;
 &lt;p&gt;I learned about the &lt;code&gt;DJANGO_SECRET_KEY&lt;/code&gt; when I published the code of my app on GitHub and immediately got a warning e-mail that I've compromised something important.&lt;/p&gt;
 &lt;p&gt;The time has passed and I wasn't any closer to having the actual website out there. 
