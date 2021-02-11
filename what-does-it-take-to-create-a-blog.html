@@ -16,7 +16,7 @@
 
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="What does it take to create a blog"/>
-    <meta property="og:description" content="Why blogging? My old domain was unused for the last few years. I had little idea what to put there though. Having a showcase of the things I do which may be interesting for the other people. I like to write and miss it since I switched to tech. There …"/>
+    <meta property="og:description" content="Why blogging? My old domain was unused for the last few years. I had little idea what to put there though. Having a showcase of the things I do which may be interesting for the other people. I like writing and miss it since I switched to tech. There are …"/>
     <meta property="og:site_name" content="A blog" />
     <meta property="og:url" content="https://karolinasurma.eu/what-does-it-take-to-create-a-blog.html"/>
 
@@ -82,7 +82,7 @@
 <ul>
 <li>My old domain was unused for the last few years. I had little idea what to put there though.</li>
 <li>Having a <strong>showcase</strong> of the things I do which may be interesting for the other people. </li>
-<li>I <strong>like to write</strong> and miss it since I switched to tech. </li>
+<li>I <strong>like writing</strong> and miss it since I switched to tech. </li>
 <li>There are all those tips from seniors to juniors about <strong>writing down the lists of what you've learnt</strong>. 
 This makes sense as juniors tend to underestimate their progress in time.
 So I treat this as an opportunity to have some edulog, maybe helpful for others, maybe just for me.</li>
@@ -95,13 +95,13 @@ Blogger belongs to Google now and will probably end in a few years.</p>
 I've been using Python for pretty much everything in the last three years. 
 Those, however, were just <strong>scripts</strong>. 
 You run them with <code>python file.py</code> and never actually get to build a whole solution.
-I felt like I lack the praxis on <strong>gluing things together</strong>. 
-That seemed like a natural solution to build upon my Python knowledge.</p>
+I felt like I lack the experience in <strong>gluing things together</strong>. 
+It seemed like a natural solution to build upon my Python knowledge.</p>
 <h3>Django? Yes, but.</h3>
 <p>How about Django? Django sounds cool! 
 And I've been to a <a href="https://tutorial.djangogirls.org/en/">Django Girls workshop</a>, so this couldn't be that complicated, could it? 
-I spent a great time playing with a web application in Django. I really have! 
-There is a <em>Postgres database</em>, those cool <em>Jinja templates</em>, I even used <em>Bootstrap</em> to make the site responsive, wrote a nice <em>admin interface</em> and made it possible to use <em>Markdown</em> in the blog posts. </p>
+I've spent a great time playing with a web application in Django. I really have! 
+The app is connected to a <em>Postgres database</em>, uses those cool <em>Jinja templates</em>, I even used <em>Bootstrap</em> to make the site responsive, wrote a nice <em>admin interface</em> and made it possible to use <em>Markdown</em> in the blog posts. </p>
 <p>Then I realised I need <em>categories</em> and plenty of other changes that will require more time spent digging in application models and Jinja.
 I started reading about deployment and went through what <a href="https://www.heroku.com/">Heroku</a> has to offer.</p>
 <p>I learned about the <code>DJANGO_SECRET_KEY</code> when I published the code of my app on GitHub and immediately got a warning e-mail that I've compromised something important.</p>
@@ -112,7 +112,7 @@ In fact it felt like learning programming: <strong>with each step I was even fur
 I remembered <a href="https://roboprojekt.pyladies.cz/">our project's blog</a> which was on the other side of the complexity spectrum: there were Markdown blog posts and deployment on commit on GitHub. 
 No databases, minimum code, static site - suddenly this sounded so beautifully simple!
 Why to overcomplicate things?
-I took a long look at the other blog and realized it was built on the extension to <a href="https://blog.getpelican.com/">Pelican</a> engine, which is written in Python. 
+I took a long look at that other blog and realized it was built on the extension to <a href="https://blog.getpelican.com/">Pelican</a> engine, which is written in Python. 
 I looked also at Jekyll and later Hugo, but decided to stick to what seemed like a nice case of <em>gluing</em> task I intended to perform.</p>
 <h2>Pelican</h2>
 <p>First things first: I went through all the <a href="http://www.pelicanthemes.com/">Pelican themes</a>. I was looking for something minimalistic yet pretty with a support of categories and optionally tags. 
@@ -120,7 +120,7 @@ That was surprisingly tough task.
 One of the last on the list was <a href="https://github.com/petrnohejl/MinimalXY">MinimalXY</a> by Petr Nohejl (funnily enough, a developer from Brno) which I felt in love with as soon as I saw it. </p>
 <p>So I was decided and could frantically start with edits:</p>
 <ul>
-<li>deleting plenty of code I didn't want. That was a nice excersize in reading someone else's code. </li>
+<li>deleting plenty of code I didn't want. That was a nice exercise in reading someone else's code. </li>
 <li>removing Google Analytics related code for now as I'm not sure I want to track anything here.</li>
 <li>installing the Open Sans font locally rather than fetching it from Google Fonts. </li>
 </ul>
@@ -129,7 +129,7 @@ One of the last on the list was <a href="https://github.com/petrnohejl/MinimalXY
 The edits I've made were nice small tasks forcing me to look for explanations around the Internet. 
 It makes me still a bit uneasy that I don't understand everything in the project.</p>
 <p>Inspired by Honza Javorek's <a href="https://github.com/honzajavorek/honzajavorek.cz/blob/master/weeknotes.py">weeknotes script</a> I made a template generator to make it easier to add new posts. Thanks!
-Many other inspirations come from the open source projects on GitHub. 
+Many other inspirations came from the open source projects on GitHub. 
 I took a look at deployment routines, went through some people's configurations and repository structures. </p>
 <p>And all of this crash course took place in around a week.
 This time I feel like a winner :).</p>
