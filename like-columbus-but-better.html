@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Like Columbus but better &ndash; A blog</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Karo" />
+    <meta property="article:section" content="OpenStreetMap" />
+    <meta property="article:published_time" content="2021-02-15" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Like Columbus but better"/>
+    <meta property="og:description" content="It&#39;s hard for me to go out without a purpose. Hiking in the forests, meeting some other people - count me in. Trying all the tram routes in the city - of course. But then the pandemic comes. Or there is no one available in the city. Or you&#39;ve seen all of …"/>
+    <meta property="og:site_name" content="A blog" />
+    <meta property="og:url" content="https://karolinasurma.eu/like-columbus-but-better.html"/>
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://karolinasurma.eu/feeds/all.atom.xml" title="A blog Atom Feed" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/opensans.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/pygments-highlight-github.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://karolinasurma.eu/./images/extra/favicon.ico">
+
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://karolinasurma.eu/" id="header-logo" title="Home">KS</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Like Columbus but better</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2021-02-15T17:48:00+01:00">Mon 15 February 2021</time> in <a href="https://karolinasurma.eu/category/openstreetmap.html" title="All articles in category OpenStreetMap">OpenStreetMap</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/mapping.html" title="All articles with Mapping tag">#mapping</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/en.html" title="All articles with En tag">#EN</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <p>It's hard for me to go out without a purpose.
+Hiking in the forests, meeting some other people - count me in.
+Trying all the tram routes in the city - of course. </p>
+<p>But then the pandemic comes. Or there is no one available in the city.
+Or you've seen all of the tram, bus, trolley, and city train routes. </p>
+<p>That could be a reason to stop leaving the flat. </p>
+<p>I hacked this laziness of mine by starting editing <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. 
+The map isn't primarily a map - it's a big open source database.
+That means <strong>anyone</strong> can edit it, and there is plenty of possibilities, from very easy to quite complicated ones. </p>
+<h2>Where you've encountered OSM</h2>
+<p>If you think you don't know OpenStreetMap, you're probably wrong.</p>
+<p>This is the default map used on Facebook. 
+(They seem to have forgotten to attach the license attribution. 
+Those little distracted heads!)</p>
+<p>You may know one of the popular offline mobile applications, <a href="https://wiki.openstreetmap.org/wiki/OsmAnd">OsmAnd</a>.
+If you don't, try it. 
+It has some grat features helping with planning mountain hiking, especially altitude profile.</p>
+<p>The well-known maps in Czechia, <a href="https://en.mapy.cz/">mapy.cz</a>, use OpenStreetMap for showing foreign countries data. </p>
+<h2>Editing map</h2>
+<p>First we need to talk about where to get source information from.</p>
+<h3>Data source</h3>
+<p>As a general rule one mustn't map out of proprietary data sources like Google Maps.
+The objects that are added to map should be ones you've checked yourself - <strong>you went there and saw it with your own eyes</strong>. 
+It's called "survey" or "local knowledge" in the data sources and it's the most important thing you should know about OSM.</p>
+<p>No automatic imports, no drawing from satellite photos when editing Czechia or broadly: Europe.
+It's a community project and anyone can become a contributor.</p>
+<h3>Point of interest (POI)</h3>
+<p>Each point of interest (like shop, bar, cinema), line (streets) or polygon (buildings, areas) consist of tags.
+A tag is a key-value pair. </p>
+<p>Drawing paths can be also fun, but today I will focus on editing POIs only.</p>
+<p><img alt="JOSM-keys" src="images/osm-poi-key-value.png">
+<em>example tagging of a POI - restaurant</em></p>
+<p>Many of us have a thing or two that are important for us in the city. 
+It may be <strong>wheelchair accessibility</strong>, <strong>free parking</strong>, <strong>public toilets</strong>, <strong>recycling points</strong>, <strong>outdoor seating</strong> or type of diet in the restaurants.</p>
+<p>A protip gratis: There is no sense in trying to map everything around you, you'll become exhausted and demotivated very soon.
+Pick something you care for or is fun for you.
+ It's better to be a constant contributor on small changes than big one-time shot.</p>
+<p>One of my things is adding vegan places to the map.
+Whenever a restaurant has a considerable amount of vegan meal on menu, I take a photo of the door labels and edit it at home.
+As you can see in the image above, the respective key is "diet:vegan" and the value should be one of <em>yes</em>, <em>no</em>, <em>only</em>.</p>
+<p><img alt="A restaurant" src="images/restaurant_photo.jpg">
+<em>when editing a restaurant at home, I update all the information, not only diet</em></p>
+<h3>Mapping the defaults</h3>
+<p>There is an issue with <em>no</em>, though. 
+The original philosophy of OSM was: we don't map defaults. 
+So if in Czechia the default is "no vegan options", we shouldn't add the tag "diet:vegan=no" to map.
+For the same reason one shouldn't map for example the possibility to pay with cash. </p>
+<p>These days it changes, mostly because of rising popularity of mobile applications like StreetComplete, which gamify the tag hunt. 
+The more people use them, the more defaults are being mapped and it seems there is hardly anything that can be done to prevent the trend.</p>
+<p>The defaults may be also interesting for people building their own applications on the top of OSM data, eg. rendering 3D city models.
+As a side note, beware typos, it may end up like <a href="https://www.engadget.com/flight-simulator-open-street-map-building-205545509.html">in this case</a>.</p>
+<h3>Finding your tag</h3>
+<p>OSM has got a tremendous <a href="https://wiki.openstreetmap.org/wiki/Main_Page">Wiki</a>. It so big it's overwhelming.
+One of the greatest features there are the tags explanations.</p>
+<p>It happens a lot to me that I'm not sure how to tag a particular thing. 
+When preparing a talk, I was looking for a dog hairdresser to build a <em>funny</em> example.
+Typing "dog hairdresser tag osm" to my favourite search engine resulted in an immediate shot: <a href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dpet_grooming">the answer</a>.</p>
+<p>I highly recommend diving into the Wiki to look for the answers.</p>
+<h3>Editors</h3>
+<p>To edit maps you need to create a free account on <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. </p>
+<p>Then you can edit: </p>
+<ul>
+<li>directly in the web browser using iD editor. See <a href="https://learnosm.org/en/beginner/id-editor/">guide</a> for more details.</li>
+<li>using a desktop application, like <a href="https://josm.openstreetmap.de/">JOSM</a>. See <a href="https://learnosm.org/en/josm/">guide</a> for more details.</li>
+</ul>
+<p>Once you find an object you want to edit, you are free to add, edit or remove a desired tag.</p>
+<p>I mentioned <a href="https://wiki.openstreetmap.org/wiki/StreetComplete">StreetComplete</a> earlier, that's another approach to OSM.
+It's a mobile application (available on both F-Droid and Play Store).
+Here you don't plan what to add to map, it's designed the opposite way: it navigates you through quests in the city. 
+When you walk past a quest, you can answer a simple question: "Is XXX still here?" or "What kind of YYY is here?"
+There is gazillion types of quests, I have disabled around half of them. :) </p>
+<p><img alt="street" src="images/street-complete-1.png">  <img alt="map" src="images/street-complete-2.png"></p>
+<p>Every time you upload some of the answers, you get plenty of stars and some achievements get unlocked. 
+You may find yourself hunting the quests in the places you'd otherwise never go. </p>
+<p>Consider yourself warned.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="mailto:w_oczekiwaniu[at]interia.pl"><img class="avatar" src="./images/extra/karo.jpg" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px;">
+                  <a href="mailto:w_oczekiwaniu[at]interia.pl"><span id="author-name" class="w3-hover-text-dark-grey">Karo</span></a>
+                  <p id="author-story">Hi there! I’m Karo. Whenever not computering, I read yet another book or hike through South Moravia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2021          Karo
+ | <a href="https://karolinasurma.eu/feeds/all.atom.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+  </body>
+</html>

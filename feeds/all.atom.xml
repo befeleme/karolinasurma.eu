@@ -1,5 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-09T21:11:00+01:00</updated><entry><title>What does it take to create a blog</title><link href="https://karolinasurma.eu/what-does-it-take-to-create-a-blog.html" rel="alternate"></link><published>2021-02-09T21:11:00+01:00</published><updated>2021-02-09T21:11:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-09:/what-does-it-take-to-create-a-blog.html</id><summary type="html">&lt;h2&gt;Why blogging?&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-15T17:48:00+01:00</updated><entry><title>Like Columbus but better</title><link href="https://karolinasurma.eu/like-columbus-but-better.html" rel="alternate"></link><published>2021-02-15T17:48:00+01:00</published><updated>2021-02-15T17:48:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-15:/like-columbus-but-better.html</id><summary type="html">&lt;p&gt;It's hard for me to go out without a purpose.
+Hiking in the forests, meeting some other people - count me in.
+Trying all the tram routes in the city - of course. &lt;/p&gt;
+&lt;p&gt;But then the pandemic comes. Or there is no one available in the city.
+Or you've seen all of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's hard for me to go out without a purpose.
+Hiking in the forests, meeting some other people - count me in.
+Trying all the tram routes in the city - of course. &lt;/p&gt;
+&lt;p&gt;But then the pandemic comes. Or there is no one available in the city.
+Or you've seen all of the tram, bus, trolley, and city train routes. &lt;/p&gt;
+&lt;p&gt;That could be a reason to stop leaving the flat. &lt;/p&gt;
+&lt;p&gt;I hacked this laziness of mine by starting editing &lt;a href="https://www.openstreetmap.org/"&gt;OpenStreetMap&lt;/a&gt;. 
+The map isn't primarily a map - it's a big open source database.
+That means &lt;strong&gt;anyone&lt;/strong&gt; can edit it, and there is plenty of possibilities, from very easy to quite complicated ones. &lt;/p&gt;
+&lt;h2&gt;Where you've encountered OSM&lt;/h2&gt;
+&lt;p&gt;If you think you don't know OpenStreetMap, you're probably wrong.&lt;/p&gt;
+&lt;p&gt;This is the default map used on Facebook. 
+(They seem to have forgotten to attach the license attribution. 
+Those little distracted heads!)&lt;/p&gt;
+&lt;p&gt;You may know one of the popular offline mobile applications, &lt;a href="https://wiki.openstreetmap.org/wiki/OsmAnd"&gt;OsmAnd&lt;/a&gt;.
+If you don't, try it. 
+It has some grat features helping with planning mountain hiking, especially altitude profile.&lt;/p&gt;
+&lt;p&gt;The well-known maps in Czechia, &lt;a href="https://en.mapy.cz/"&gt;mapy.cz&lt;/a&gt;, use OpenStreetMap for showing foreign countries data. &lt;/p&gt;
+&lt;h2&gt;Editing map&lt;/h2&gt;
+&lt;p&gt;First we need to talk about where to get source information from.&lt;/p&gt;
+&lt;h3&gt;Data source&lt;/h3&gt;
+&lt;p&gt;As a general rule one mustn't map out of proprietary data sources like Google Maps.
+The objects that are added to map should be ones you've checked yourself - &lt;strong&gt;you went there and saw it with your own eyes&lt;/strong&gt;. 
+It's called "survey" or "local knowledge" in the data sources and it's the most important thing you should know about OSM.&lt;/p&gt;
+&lt;p&gt;No automatic imports, no drawing from satellite photos when editing Czechia or broadly: Europe.
+It's a community project and anyone can become a contributor.&lt;/p&gt;
+&lt;h3&gt;Point of interest (POI)&lt;/h3&gt;
+&lt;p&gt;Each point of interest (like shop, bar, cinema), line (streets) or polygon (buildings, areas) consist of tags.
+A tag is a key-value pair. &lt;/p&gt;
+&lt;p&gt;Drawing paths can be also fun, but today I will focus on editing POIs only.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="JOSM-keys" src="images/osm-poi-key-value.png"&gt;
+&lt;em&gt;example tagging of a POI - restaurant&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Many of us have a thing or two that are important for us in the city. 
+It may be &lt;strong&gt;wheelchair accessibility&lt;/strong&gt;, &lt;strong&gt;free parking&lt;/strong&gt;, &lt;strong&gt;public toilets&lt;/strong&gt;, &lt;strong&gt;recycling points&lt;/strong&gt;, &lt;strong&gt;outdoor seating&lt;/strong&gt; or type of diet in the restaurants.&lt;/p&gt;
+&lt;p&gt;A protip gratis: There is no sense in trying to map everything around you, you'll become exhausted and demotivated very soon.
+Pick something you care for or is fun for you.
+ It's better to be a constant contributor on small changes than big one-time shot.&lt;/p&gt;
+&lt;p&gt;One of my things is adding vegan places to the map.
+Whenever a restaurant has a considerable amount of vegan meal on menu, I take a photo of the door labels and edit it at home.
+As you can see in the image above, the respective key is "diet:vegan" and the value should be one of &lt;em&gt;yes&lt;/em&gt;, &lt;em&gt;no&lt;/em&gt;, &lt;em&gt;only&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="A restaurant" src="images/restaurant_photo.jpg"&gt;
+&lt;em&gt;when editing a restaurant at home, I update all the information, not only diet&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Mapping the defaults&lt;/h3&gt;
+&lt;p&gt;There is an issue with &lt;em&gt;no&lt;/em&gt;, though. 
+The original philosophy of OSM was: we don't map defaults. 
+So if in Czechia the default is "no vegan options", we shouldn't add the tag "diet:vegan=no" to map.
+For the same reason one shouldn't map for example the possibility to pay with cash. &lt;/p&gt;
+&lt;p&gt;These days it changes, mostly because of rising popularity of mobile applications like StreetComplete, which gamify the tag hunt. 
+The more people use them, the more defaults are being mapped and it seems there is hardly anything that can be done to prevent the trend.&lt;/p&gt;
+&lt;p&gt;The defaults may be also interesting for people building their own applications on the top of OSM data, eg. rendering 3D city models.
+As a side note, beware typos, it may end up like &lt;a href="https://www.engadget.com/flight-simulator-open-street-map-building-205545509.html"&gt;in this case&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Finding your tag&lt;/h3&gt;
+&lt;p&gt;OSM has got a tremendous &lt;a href="https://wiki.openstreetmap.org/wiki/Main_Page"&gt;Wiki&lt;/a&gt;. It so big it's overwhelming.
+One of the greatest features there are the tags explanations.&lt;/p&gt;
+&lt;p&gt;It happens a lot to me that I'm not sure how to tag a particular thing. 
+When preparing a talk, I was looking for a dog hairdresser to build a &lt;em&gt;funny&lt;/em&gt; example.
+Typing "dog hairdresser tag osm" to my favourite search engine resulted in an immediate shot: &lt;a href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dpet_grooming"&gt;the answer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I highly recommend diving into the Wiki to look for the answers.&lt;/p&gt;
+&lt;h3&gt;Editors&lt;/h3&gt;
+&lt;p&gt;To edit maps you need to create a free account on &lt;a href="https://www.openstreetmap.org/"&gt;OpenStreetMap&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Then you can edit: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;directly in the web browser using iD editor. See &lt;a href="https://learnosm.org/en/beginner/id-editor/"&gt;guide&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;li&gt;using a desktop application, like &lt;a href="https://josm.openstreetmap.de/"&gt;JOSM&lt;/a&gt;. See &lt;a href="https://learnosm.org/en/josm/"&gt;guide&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you find an object you want to edit, you are free to add, edit or remove a desired tag.&lt;/p&gt;
+&lt;p&gt;I mentioned &lt;a href="https://wiki.openstreetmap.org/wiki/StreetComplete"&gt;StreetComplete&lt;/a&gt; earlier, that's another approach to OSM.
+It's a mobile application (available on both F-Droid and Play Store).
+Here you don't plan what to add to map, it's designed the opposite way: it navigates you through quests in the city. 
+When you walk past a quest, you can answer a simple question: "Is XXX still here?" or "What kind of YYY is here?"
+There is gazillion types of quests, I have disabled around half of them. :) &lt;/p&gt;
+&lt;p&gt;&lt;img alt="street" src="images/street-complete-1.png"&gt;  &lt;img alt="map" src="images/street-complete-2.png"&gt;&lt;/p&gt;
+&lt;p&gt;Every time you upload some of the answers, you get plenty of stars and some achievements get unlocked. 
+You may find yourself hunting the quests in the places you'd otherwise never go. &lt;/p&gt;
+&lt;p&gt;Consider yourself warned.&lt;/p&gt;</content><category term="OpenStreetMap"></category><category term="mapping"></category><category term="EN"></category></entry><entry><title>What does it take to create a blog</title><link href="https://karolinasurma.eu/what-does-it-take-to-create-a-blog.html" rel="alternate"></link><published>2021-02-09T21:11:00+01:00</published><updated>2021-02-09T21:11:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-09:/what-does-it-take-to-create-a-blog.html</id><summary type="html">&lt;h2&gt;Why blogging?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;My old domain was unused for the last few years. I had little idea what to put there though.&lt;/li&gt;
 &lt;li&gt;Having a &lt;strong&gt;showcase&lt;/strong&gt; of the things I do which may be interesting for the other people. &lt;/li&gt;
