@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-15T17:48:00+01:00</updated><entry><title>Like Columbus but better</title><link href="https://karolinasurma.eu/like-columbus-but-better.html" rel="alternate"></link><published>2021-02-15T17:48:00+01:00</published><updated>2021-02-15T17:48:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-15:/like-columbus-but-better.html</id><summary type="html">&lt;p&gt;It's hard for me to go out without a purpose.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-17T16:36:00+01:00</updated><entry><title>Advent of Code 2020</title><link href="https://karolinasurma.eu/advent-of-code-2020.html" rel="alternate"></link><published>2021-02-17T16:36:00+01:00</published><updated>2021-02-17T16:36:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-17:/advent-of-code-2020.html</id><summary type="html">&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;This year I joined the challenge with the intention to make it to the end, no matter what.
+I did it out of curiosity: with the aim to challenge my Python skill and have some brain exercise.
+As a beginner I solved first puzzles in the previous years but …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;p&gt;This year I joined the challenge with the intention to make it to the end, no matter what.
+I did it out of curiosity: with the aim to challenge my Python skill and have some brain exercise.
+As a beginner I solved first puzzles in the previous years but didn't make it to the 3rd day. This year was supposed to be different. &lt;/p&gt;
+&lt;p&gt;Maybe &lt;strong&gt;making it to the end&lt;/strong&gt; doesn't sound like a good-enough motivation, but it worked for me.
+The first days of the challenge were quite easy, backing up the the main motivation. 
+Seeing your first earned stars makes you feel good about yourself, so you want to push your limits even further ;).&lt;/p&gt;
+&lt;h2&gt;Puzzles&lt;/h2&gt;
+&lt;p&gt;Tasks complexity grew gradually but that was to expect. 
+I didn't really get to do anything else in my "free" time except for AoC in December.
+This needs to be counted with when joyfully joining the challenge.&lt;/p&gt;
+&lt;p&gt;AoC doesn't require any programming style, that's up to you. 
+People in the &lt;a href="https://www.reddit.com/r/adventofcode/"&gt;subreddit&lt;/a&gt; were sharing their insane solutions in Minecraft, Factorio or even the whole event (all 25 days!) as Python oneliner.
+My idea was to refresh a bit of everything, so the solutions look like Polish bigos. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bigos" src="images/bigos.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;bigos, do try it at home &lt;a href="https://commons.wikimedia.org/wiki/File:Bigos_polonia.jpg"&gt;source&lt;/a&gt;&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;I used the classes once or twice, some of the puzzles were short enough to be solved with a few lines without special ordering.
+With most of the puzzles I defined at least some functions as I split the task to simpler problems and then was going to tackle the big complex one.&lt;/p&gt;
+&lt;p&gt;I realized that a big challenge for me is to &lt;strong&gt;sew up the big solution from small subtasks&lt;/strong&gt;. 
+At some days the puzzle was too complex to see the solution straight away. 
+I solved the smallest parts then, like applying the rules and evaluating the round, and at the end I engineered the working whole from the small pieces I had. 
+This typically led to some level of code ugliness.&lt;/p&gt;
+&lt;h3&gt;Some surprises on the way&lt;/h3&gt;
+&lt;p&gt;There was A LOT of input processing. Every day new structure.&lt;/p&gt;
+&lt;p&gt;A great variety of tasks appeared. 
+One day you navigate the ship, another create 4D cubes just to implement the input validation rules the next one. 
+Jumping from one context to another was a must.&lt;/p&gt;
+&lt;p&gt;Some problems required hours to crack. 
+Being still more of a beginner I saw most of the problems for the first time. 
+&lt;strong&gt;I don't regret a single hour.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The best help to a programmer? Notebook and pencil. 
+The second best help? Community to ask, support, laugh and uncork the bottleneck when there comes one.&lt;/p&gt;
+&lt;p&gt;I realized what do the people mean when they apply the categories of not/elegant to code.
+There are some places in my solutions which could use some better approach, but I wasn't fit to solve it myself right away. 
+Sometimes I didn't know how, sometimes it would just take too much time.
+This could have been the opportunity not to brute force the solutions, but often this was the quickest way to get to the end of the task. 
+&lt;strong&gt;I intend not to start code shaming myself though.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Aaaand it is easier to code with a fever than to code with a headache. Checked so that you don't have to.&lt;/p&gt;
+&lt;h2&gt;Community&lt;/h2&gt;
+&lt;p&gt;I learned a lot from reading the solutions of the small group of PyLadies here in Czechia. 
+When solving a puzzle I could typically see only one way to do it - mine - and seeing how differently the others think through issues was genuinely refreshing. 
+A piece of competition we had using our private Leaderboard was another element of keeping the motivation up and our common Slack channel was the first place I often directed my steps to when having a struggle. &lt;/p&gt;
+&lt;h2&gt;Learning opportunities&lt;/h2&gt;
+&lt;p&gt;Some first timers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python standard library gems: &lt;em&gt;itertools&lt;/em&gt;, &lt;em&gt;collections&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;regular expressions (Python library &lt;em&gt;re&lt;/em&gt;): The first day of using regex was painful. The 15th - easy peasy.&lt;/li&gt;
+&lt;li&gt;lambdas: great tool for lookup dictionaries&lt;/li&gt;
+&lt;li&gt;I became aware of the big-O complexity, that there exist more and less efficient data types and operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Growing in confidence:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;navigating Python docs. I started using &lt;a href="https://zealdocs.org/"&gt;Zeal&lt;/a&gt; and like it a lot&lt;/li&gt;
+&lt;li&gt;understanding the task, using test data to validate my solutions&lt;/li&gt;
+&lt;li&gt;breaking the task down to small pieces&lt;/li&gt;
+&lt;li&gt;coding without debug printing every second line (I can keep some abstract representation of the ongoing transformations in my head)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My final score is 48/50. In the last unsolved big task I have to create a picture out of very small pieces. 
+As I didn't enjoy the first half of the puzzle at all, I just can't force myself to sit and finish it off. &lt;/p&gt;
+&lt;h2&gt;The end&lt;/h2&gt;
+&lt;p&gt;If I started going through 2020 again, I would most certainly solve some of the puzzles differently. 
+With new skills and foreseeing more problems as they occur, I would look for another approach.
+I feel tempted to go through AoC from the previous years as an ongoing exercise during 2021.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note to self: don't be too optimistic about this one.&lt;/em&gt;&lt;/p&gt;</content><category term="Python"></category><category term="coding"></category><category term="AoC"></category><category term="EN"></category></entry><entry><title>Like Columbus but better</title><link href="https://karolinasurma.eu/like-columbus-but-better.html" rel="alternate"></link><published>2021-02-15T17:48:00+01:00</published><updated>2021-02-15T17:48:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-15:/like-columbus-but-better.html</id><summary type="html">&lt;p&gt;It's hard for me to go out without a purpose.
 Hiking in the forests, meeting some other people - count me in.
 Trying all the tram routes in the city - of course. &lt;/p&gt;
 &lt;p&gt;But then the pandemic comes. Or there is no one available in the city.
