@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-17T16:36:00+01:00</updated><entry><title>Advent of Code 2020</title><link href="https://karolinasurma.eu/advent-of-code-2020.html" rel="alternate"></link><published>2021-02-17T16:36:00+01:00</published><updated>2021-02-17T16:36:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-17:/advent-of-code-2020.html</id><summary type="html">&lt;h2&gt;Intro&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-17T18:30:00+01:00</updated><entry><title>Edulog #1</title><link href="https://karolinasurma.eu/edulog-1.html" rel="alternate"></link><published>2021-02-17T18:30:00+01:00</published><updated>2021-02-17T18:30:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-17:/edulog-1.html</id><summary type="html">&lt;h2&gt;Accomplishments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/vege-jmk_557579"&gt;Vege JMK - dynamic map&lt;/a&gt; showing raw data + &lt;a href="https://github.com/befeleme/vegan_JMK"&gt;GitHub repo with data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/veg-jmk-preprocessed_563879"&gt;static map&lt;/a&gt; showing preprocessed data (Proof of concept)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I shall continue on the preprocessed one, it reflects the reality better.&lt;/p&gt;
+&lt;h2&gt;Last week I learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;how to create maps using uMap, plenty of clicking and some fun included.&lt;/li&gt;
+&lt;li&gt;how …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Accomplishments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/vege-jmk_557579"&gt;Vege JMK - dynamic map&lt;/a&gt; showing raw data + &lt;a href="https://github.com/befeleme/vegan_JMK"&gt;GitHub repo with data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/veg-jmk-preprocessed_563879"&gt;static map&lt;/a&gt; showing preprocessed data (Proof of concept)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I shall continue on the preprocessed one, it reflects the reality better.&lt;/p&gt;
+&lt;h2&gt;Last week I learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;how to create maps using uMap, plenty of clicking and some fun included.&lt;/li&gt;
+&lt;li&gt;how to use GitHub Actions to deploy static website to a branch that is then served.&lt;/li&gt;
+&lt;li&gt;what is quick sort and how to implement it in &lt;a href="https://stackabuse.com/quicksort-in-python/"&gt;Python&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;how does the &lt;em&gt;.spec&lt;/em&gt; file look like. RPM packages are created from them.&lt;/li&gt;
+&lt;li&gt;about the ways some communities work and why do they part their ways when business comes into scene.
+Inspired by the story of &lt;a href="https://hedgedoc.org/history/"&gt;HegdeDoc&lt;/a&gt;, once derivate of &lt;a href="https://hackmd.io/"&gt;HackMD.io&lt;/a&gt; which I use a lot.&lt;/li&gt;
+&lt;li&gt;I can't estimate development time well. It took me around 5x more to create the first map than I expected.&lt;/li&gt;
+&lt;li&gt;a lot of various stuff from &lt;a href="https://junior.guru/club/"&gt;junior.guru club&lt;/a&gt;. I wasn't sure I'll benefit from there, I am. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I intend to purchase the access once I start getting paid again :)&lt;/p&gt;
+&lt;h2&gt;Plans and hopes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;listen to the story of ownCloud CTO who &lt;a href="https://archive.fosdem.org/2018/schedule/event/nextcloud/"&gt;forked his repo and started Nextcloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;check out the &lt;a href="https://fallofcivilizationspodcast.com/"&gt;Fall of civilizations&lt;/a&gt; podcast &lt;/li&gt;
+&lt;/ul&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Advent of Code 2020</title><link href="https://karolinasurma.eu/advent-of-code-2020.html" rel="alternate"></link><published>2021-02-17T16:36:00+01:00</published><updated>2021-02-17T16:36:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-17:/advent-of-code-2020.html</id><summary type="html">&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;This year I joined the challenge with the intention to make it to the end, no matter what.
 I did it out of curiosity: with the aim to challenge my Python skill and have some brain exercise.
 As a beginner I solved first puzzles in the previous years but …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Intro&lt;/h2&gt;
@@ -85,7 +116,7 @@ That means &lt;strong&gt;anyone&lt;/strong&gt; can edit it, and there is plenty 
 Those little distracted heads!)&lt;/p&gt;
 &lt;p&gt;You may know one of the popular offline mobile applications, &lt;a href="https://wiki.openstreetmap.org/wiki/OsmAnd"&gt;OsmAnd&lt;/a&gt;.
 If you don't, try it. 
-It has some grat features helping with planning mountain hiking, especially altitude profile.&lt;/p&gt;
+It has some great features helping with planning mountain hiking, especially altitude profile.&lt;/p&gt;
 &lt;p&gt;The well-known maps in Czechia, &lt;a href="https://en.mapy.cz/"&gt;mapy.cz&lt;/a&gt;, use OpenStreetMap for showing foreign countries data. &lt;/p&gt;
 &lt;h2&gt;Editing map&lt;/h2&gt;
 &lt;p&gt;First we need to talk about where to get source information from.&lt;/p&gt;
@@ -125,7 +156,7 @@ As a side note, beware typos, it may end up like &lt;a href="https://www.engadge
 One of the greatest features there are the tags explanations.&lt;/p&gt;
 &lt;p&gt;It happens a lot to me that I'm not sure how to tag a particular thing. 
 When preparing a talk, I was looking for a dog hairdresser to build a &lt;em&gt;funny&lt;/em&gt; example.
-Typing "dog hairdresser tag osm" to my favourite search engine resulted in an immediate shot: &lt;a href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dpet_grooming"&gt;the answer&lt;/a&gt;.&lt;/p&gt;
+Typing "dog hairdresser tag osm" to my favorite search engine resulted in an immediate shot: &lt;a href="https://wiki.openstreetmap.org/wiki/Tag:shop%3Dpet_grooming"&gt;the answer&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I highly recommend diving into the Wiki to look for the answers.&lt;/p&gt;
 &lt;h3&gt;Editors&lt;/h3&gt;
 &lt;p&gt;To edit maps you need to create a free account on &lt;a href="https://www.openstreetmap.org/"&gt;OpenStreetMap&lt;/a&gt;. &lt;/p&gt;
