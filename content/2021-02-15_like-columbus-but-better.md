@@ -28,7 +28,7 @@ Those little distracted heads!)
 
 You may know one of the popular offline mobile applications, [OsmAnd](https://wiki.openstreetmap.org/wiki/OsmAnd).
 If you don't, try it. 
-It has some grat features helping with planning mountain hiking, especially altitude profile.
+It has some great features helping with planning mountain hiking, especially altitude profile.
 
 The well-known maps in Czechia, [mapy.cz](https://en.mapy.cz/), use OpenStreetMap for showing foreign countries data. 
 
@@ -90,7 +90,7 @@ One of the greatest features there are the tags explanations.
 
 It happens a lot to me that I'm not sure how to tag a particular thing. 
 When preparing a talk, I was looking for a dog hairdresser to build a _funny_ example.
-Typing "dog hairdresser tag osm" to my favourite search engine resulted in an immediate shot: [the answer](https://wiki.openstreetmap.org/wiki/Tag:shop%3Dpet_grooming).
+Typing "dog hairdresser tag osm" to my favorite search engine resulted in an immediate shot: [the answer](https://wiki.openstreetmap.org/wiki/Tag:shop%3Dpet_grooming).
 
 I highly recommend diving into the Wiki to look for the answers.
 
