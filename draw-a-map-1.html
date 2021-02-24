@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Draw a map! (1/2) &ndash; A blog</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social -->
+    <meta property="article:author" content="Karo" />
+    <meta property="article:section" content="OpenStreetMap" />
+    <meta property="article:published_time" content="2021-02-24" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Draw a map! (1/2)"/>
+    <meta property="og:description" content="uMap uMap is a tool to create custom maps on the OpenStreetMap layers. In order to start creating maps, one needs to have an OSM account and click on &#34;Create a map&#34; on the uMap homepage. There is a few possibilities how to get data to the map. Language course …"/>
+    <meta property="og:site_name" content="A blog" />
+    <meta property="og:url" content="https://karolinasurma.eu/draw-a-map-1.html"/>
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://karolinasurma.eu/feeds/all.atom.xml" title="A blog Atom Feed" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/opensans.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://karolinasurma.eu/theme/css/pygments-highlight-github.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://karolinasurma.eu/./images/extra/favicon.ico">
+
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://karolinasurma.eu/" id="header-logo" title="Home">KS</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-green"><a href="/archives.html">Archive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Draw a map! (1/2)</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2021-02-24T14:38:00+01:00">Wed 24 February 2021</time> in <a href="https://karolinasurma.eu/category/openstreetmap.html" title="All articles in category OpenStreetMap">OpenStreetMap</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/mapping.html" title="All articles with Mapping tag">#mapping</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/umap.html" title="All articles with Umap tag">#uMap</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://karolinasurma.eu/tag/en.html" title="All articles with En tag">#EN</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <h2>uMap</h2>
+<p><a href="https://umap.openstreetmap.fr/en/">uMap</a> is a tool to create custom maps on the OpenStreetMap layers.
+In order to start creating maps, one needs to have an <strong>OSM account</strong> and click on "Create a map" on the uMap homepage.
+There is a few possibilities how to get data to the map.</p>
+<h3>Language course in Wrocław</h3>
+<p>Your friend is going to Wrocław for a language course. 
+They want to know where to eat the best <em>pierogi</em> in the city. 
+You want to show them additionally the <em>campus area</em> as well as some best <em>walking routes</em>.</p>
+<p>Requirements:</p>
+<ul>
+<li>you need a pinpoint, shape and line drawings on the map</li>
+<li>the map shouldn't change: once you finish your edits, that's it</li>
+</ul>
+<p>All of this is achievable with the three options on the top-right map menu.
+Additionally, one can change the background to the most suiting the needs of the moment.</p>
+<p><img alt="wroclaw" src="./images/umap-wro.png"></p>
+<p>The final map can be embedded to your site with a piece of HTML code.
+See the same example as interactive map:</p>
+<iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/wrocaw-pierogi_567141?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+
+<p><a href="//umap.openstreetmap.fr/en/map/wrocaw-pierogi_567141">See full screen</a></p>
+
+<h3>Use case 2</h3>
+<p>Your friend now knows where to go to learn, drink beer and eat pierogi.</p>
+<p>Let's keep it even more stereotypical.</p>
+<p>They heard that there is plenty of old churches there and they want to take a look at some of them.
+It's Poland so marking each church manually might be a tedious task.
+It would be good to be able to <strong>bulk import data about churches</strong>.</p>
+<p>Requirements:</p>
+<ul>
+<li>no more drawing manually, automation needed</li>
+<li>the map shouldn't change: once you finish your edits, that's it</li>
+</ul>
+<p>The useful tool for the task is <a href="https://overpass-turbo.eu/#">Overpass Turbo</a> which runs queries to OSM database and returns the results as JSON files.</p>
+<p>First, you need to establish what we're looking for. 
+Using your favorite search engine for "church tag OSM" will lead you to <a href="https://wiki.openstreetmap.org/wiki/Tag:building%3Dchurch">this Wiki page</a>. </p>
+<p>It's time to go and ask Overpass Wizard about "building=church in Wroclaw".
+When the query is ready, click "Build and run query".</p>
+<p>There is, as expected, plenty of results. Overpass shows them by default as a map layer but there is another tab available - Data. </p>
+<p><img alt="churches in Wroclaw" src="./images/overpass-churches.png"></p>
+<blockquote>
+<p>Important note</p>
+<p>For objects that are not nodes, but polygons (as churches and other buildings often are), uMap doesn't work properly yet. </p>
+<p>In order to make it work, you shall change the query in the left panel.
+Replace the lines 17-19:
+<code>out body;
+out skel qt;</code>
+with 
+<code>out center qt;</code>
+and click the button Run on the top-left menu.
+This will ensure that each polygon has a central point and can be drawn on map.</p>
+</blockquote>
+<p>Clicking on "Data" panel you'll see them formatted as JSON. How convenient! 
+Let's copy and paste the data to uMap.</p>
+<p>In the import field there is plenty of possibilities: data can be imported from <strong>file</strong>, <strong>url</strong> or <strong>directly</strong> to the map. 
+Let's paste it directly. Format in this case should be <em>osm</em> and the layer to import is up to you.</p>
+<p><img alt="import-umap" src="./images/umap-import.png"></p>
+<p>Click "Import" et Voila!</p>
+<iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/one-time-import_567160?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+
+<p><a href="//umap.openstreetmap.fr/en/map/one-time-import_567160">See full screen</a></p>
+
+<blockquote>
+<p>Note that it's perfectly possible to import data to the first map as another data layer and provide your friend with both hand-drawn and imported objects.</p>
+</blockquote>
+<h2>Final words</h2>
+<p>Neither of maps will ever change (unless you edit them manually).
+The next time we'll take a look at how to ensure the data is updated automatically on a regular basis.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="mailto:w_oczekiwaniu[at]interia.pl"><img class="avatar" src="./images/extra/karo.jpg" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px;">
+                  <a href="mailto:w_oczekiwaniu[at]interia.pl"><span id="author-name" class="w3-hover-text-dark-grey">Karo</span></a>
+                  <p id="author-story">Hi there! I’m Karo. Whenever not computering, I read yet another book or hike through South Moravia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          2021          Karo
+ | <a href="https://karolinasurma.eu/feeds/all.atom.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+  </body>
+</html>

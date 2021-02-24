@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-18T14:30:00+01:00</updated><entry><title>Edulog #1</title><link href="https://karolinasurma.eu/edulog-1.html" rel="alternate"></link><published>2021-02-18T14:30:00+01:00</published><updated>2021-02-18T14:30:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-18:/edulog-1.html</id><summary type="html">&lt;h2&gt;Accomplishments&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-24T14:38:00+01:00</updated><entry><title>Draw a map! (1/2)</title><link href="https://karolinasurma.eu/draw-a-map-1.html" rel="alternate"></link><published>2021-02-24T14:38:00+01:00</published><updated>2021-02-24T14:38:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-24:/draw-a-map-1.html</id><summary type="html">&lt;h2&gt;uMap&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://umap.openstreetmap.fr/en/"&gt;uMap&lt;/a&gt; is a tool to create custom maps on the OpenStreetMap layers.
+In order to start creating maps, one needs to have an &lt;strong&gt;OSM account&lt;/strong&gt; and click on "Create a map" on the uMap homepage.
+There is a few possibilities how to get data to the map.&lt;/p&gt;
+&lt;h3&gt;Language course …&lt;/h3&gt;</summary><content type="html">&lt;h2&gt;uMap&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://umap.openstreetmap.fr/en/"&gt;uMap&lt;/a&gt; is a tool to create custom maps on the OpenStreetMap layers.
+In order to start creating maps, one needs to have an &lt;strong&gt;OSM account&lt;/strong&gt; and click on "Create a map" on the uMap homepage.
+There is a few possibilities how to get data to the map.&lt;/p&gt;
+&lt;h3&gt;Language course in Wrocław&lt;/h3&gt;
+&lt;p&gt;Your friend is going to Wrocław for a language course. 
+They want to know where to eat the best &lt;em&gt;pierogi&lt;/em&gt; in the city. 
+You want to show them additionally the &lt;em&gt;campus area&lt;/em&gt; as well as some best &lt;em&gt;walking routes&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;you need a pinpoint, shape and line drawings on the map&lt;/li&gt;
+&lt;li&gt;the map shouldn't change: once you finish your edits, that's it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of this is achievable with the three options on the top-right map menu.
+Additionally, one can change the background to the most suiting the needs of the moment.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wroclaw" src="./images/umap-wro.png"&gt;&lt;/p&gt;
+&lt;p&gt;The final map can be embedded to your site with a piece of HTML code.
+See the same example as interactive map:&lt;/p&gt;
+&lt;iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/wrocaw-pierogi_567141?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=undefined&amp;captionBar=false"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="//umap.openstreetmap.fr/en/map/wrocaw-pierogi_567141"&gt;See full screen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Use case 2&lt;/h3&gt;
+&lt;p&gt;Your friend now knows where to go to learn, drink beer and eat pierogi.&lt;/p&gt;
+&lt;p&gt;Let's keep it even more stereotypical.&lt;/p&gt;
+&lt;p&gt;They heard that there is plenty of old churches there and they want to take a look at some of them.
+It's Poland so marking each church manually might be a tedious task.
+It would be good to be able to &lt;strong&gt;bulk import data about churches&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no more drawing manually, automation needed&lt;/li&gt;
+&lt;li&gt;the map shouldn't change: once you finish your edits, that's it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The useful tool for the task is &lt;a href="https://overpass-turbo.eu/#"&gt;Overpass Turbo&lt;/a&gt; which runs queries to OSM database and returns the results as JSON files.&lt;/p&gt;
+&lt;p&gt;First, you need to establish what we're looking for. 
+Using your favorite search engine for "church tag OSM" will lead you to &lt;a href="https://wiki.openstreetmap.org/wiki/Tag:building%3Dchurch"&gt;this Wiki page&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;It's time to go and ask Overpass Wizard about "building=church in Wroclaw".
+When the query is ready, click "Build and run query".&lt;/p&gt;
+&lt;p&gt;There is, as expected, plenty of results. Overpass shows them by default as a map layer but there is another tab available - Data. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="churches in Wroclaw" src="./images/overpass-churches.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Important note&lt;/p&gt;
+&lt;p&gt;For objects that are not nodes, but polygons (as churches and other buildings often are), uMap doesn't work properly yet. &lt;/p&gt;
+&lt;p&gt;In order to make it work, you shall change the query in the left panel.
+Replace the lines 17-19:
+&lt;code&gt;out body;
+out skel qt;&lt;/code&gt;
+with 
+&lt;code&gt;out center qt;&lt;/code&gt;
+and click the button Run on the top-left menu.
+This will ensure that each polygon has a central point and can be drawn on map.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clicking on "Data" panel you'll see them formatted as JSON. How convenient! 
+Let's copy and paste the data to uMap.&lt;/p&gt;
+&lt;p&gt;In the import field there is plenty of possibilities: data can be imported from &lt;strong&gt;file&lt;/strong&gt;, &lt;strong&gt;url&lt;/strong&gt; or &lt;strong&gt;directly&lt;/strong&gt; to the map. 
+Let's paste it directly. Format in this case should be &lt;em&gt;osm&lt;/em&gt; and the layer to import is up to you.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="import-umap" src="./images/umap-import.png"&gt;&lt;/p&gt;
+&lt;p&gt;Click "Import" et Voila!&lt;/p&gt;
+&lt;iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/one-time-import_567160?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=undefined&amp;captionBar=false"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="//umap.openstreetmap.fr/en/map/one-time-import_567160"&gt;See full screen&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Note that it's perfectly possible to import data to the first map as another data layer and provide your friend with both hand-drawn and imported objects.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Final words&lt;/h2&gt;
+&lt;p&gt;Neither of maps will ever change (unless you edit them manually).
+The next time we'll take a look at how to ensure the data is updated automatically on a regular basis.&lt;/p&gt;</content><category term="OpenStreetMap"></category><category term="mapping"></category><category term="uMap"></category><category term="EN"></category></entry><entry><title>Edulog #1</title><link href="https://karolinasurma.eu/edulog-1.html" rel="alternate"></link><published>2021-02-18T14:30:00+01:00</published><updated>2021-02-18T14:30:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-18:/edulog-1.html</id><summary type="html">&lt;h2&gt;Accomplishments&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/vege-jmk_557579"&gt;Vege JMK - dynamic map&lt;/a&gt; showing raw data + &lt;a href="https://github.com/befeleme/vegan_JMK"&gt;GitHub repo with data&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/veg-jmk-preprocessed_563879"&gt;static map&lt;/a&gt; showing preprocessed data (Proof of concept)&lt;/li&gt;
