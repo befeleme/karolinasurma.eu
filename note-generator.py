@@ -22,14 +22,23 @@ else:
 title = f'{highlights}'
 slug = slugify(title)
 
+is_draft = input("Place to drafts? Y/N: ")
+if is_draft.lower() == "y":
+    path = CONTENT_PATH / "drafts" / f'{today_iso}_{slug}.md'
+else:
+    path = CONTENT_PATH / f'{today_iso}_{slug}.md'
 
-path = CONTENT_PATH / f'{today_iso}_{slug}.md'
 content = f'''
 Title: {title}
 Date: {today_iso} {now_iso}
-Category: Python
-Tags:
+Category:
+Tags: EN
 Slug: {slug}
+
+## Accomplishments
+## Last week I learned
+## Plans and hopes
+
 
 ![Description](./images/obrazek.jpg)
 [Link's text](URL)
