@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-02-25T13:03:00+01:00</updated><entry><title>Edulog #2</title><link href="https://karolinasurma.eu/edulog-2.html" rel="alternate"></link><published>2021-02-25T13:03:00+01:00</published><updated>2021-02-25T13:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-25:/edulog-2.html</id><summary type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I feel like to. 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-03-12T17:03:00+01:00</updated><entry><title>Edulog #3</title><link href="https://karolinasurma.eu/edulog-3.html" rel="alternate"></link><published>2021-03-12T17:03:00+01:00</published><updated>2021-03-12T17:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-03-12:/edulog-3.html</id><summary type="html">&lt;p&gt;I started the new job on March 1st and all of my unfinished texts remain this way.
+The format of this weekly accomplishments may become more bi-weekly... &lt;/p&gt;
+&lt;h2&gt;Last week I learned&lt;/h2&gt;
+&lt;p&gt;Mostly the stuff related to my new workplace.&lt;/p&gt;
+&lt;p&gt;RPM packages
+- My daily lecture - &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/"&gt;Packaging Guidelines&lt;/a&gt;
+  - And their &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/"&gt;Pythonic version …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I started the new job on March 1st and all of my unfinished texts remain this way.
+The format of this weekly accomplishments may become more bi-weekly... &lt;/p&gt;
+&lt;h2&gt;Last week I learned&lt;/h2&gt;
+&lt;p&gt;Mostly the stuff related to my new workplace.&lt;/p&gt;
+&lt;p&gt;RPM packages
+- My daily lecture - &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/"&gt;Packaging Guidelines&lt;/a&gt;
+  - And their &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/"&gt;Pythonic version&lt;/a&gt;
+- &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/ReviewGuidelines/"&gt;How to review RPM spec files&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Python packages 
+- &lt;a href="https://packaging.python.org/tutorials/packaging-projects/"&gt;Tutorial on packaging&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Community related
+- Crash course on &lt;a href="https://pythondev.readthedocs.io/diversity.html"&gt;diversity in Python&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;German snippets
+- I continue to fill in &lt;a href="https://apps.ankiweb.net/"&gt;Anki&lt;/a&gt; with new vocabulary and revise the old one.
+  I find it the best flash card application, mobile &lt;a href="https://f-droid.org/en/packages/com.ichi2.anki/"&gt;AnkiDroid can be found on f-droid&lt;/a&gt;.
+- "es" can be skipped if the whole clause plays the role of subject (2).
+If the main clause stays at the beginning, there must be pronoun subject present, and the clause is followed by a comma (1a, 1b).
+The only applicable pronoun subject is "es", "das" can't be used instead.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1a. &lt;strong&gt;Es&lt;/strong&gt; ist notwendig, alle Aufgaben durchzusehen.&lt;/p&gt;
+&lt;p&gt;1b. Notwendig ist &lt;strong&gt;es&lt;/strong&gt;, alle Aufgaben durchzusehen.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Alle Aufgaben durchzusehen ist notwendig.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Edulog #2</title><link href="https://karolinasurma.eu/edulog-2.html" rel="alternate"></link><published>2021-02-25T13:03:00+01:00</published><updated>2021-02-25T13:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-25:/edulog-2.html</id><summary type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
 This includes taking long walks, playing board games and watching Doctor Who's last season.  &lt;/p&gt;
-&lt;p&gt;I received plenty of information about onboarding at my new employer which is held …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I feel like to. 
+&lt;p&gt;I received plenty of information about onboarding at my new employer which is held …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
 This includes taking long walks, playing board games and watching Doctor Who's last season.  &lt;/p&gt;
 &lt;p&gt;I received plenty of information about onboarding at my new employer which is held online.
 Even though it was my call to switch jobs in the middle of pandemic, I still feel a bit uneasy when it comes to 100 % remote work for the next months.&lt;/p&gt;
@@ -98,7 +128,7 @@ Let's paste it directly. Format in this case should be &lt;em&gt;osm&lt;/em&gt; 
 &lt;/blockquote&gt;
 &lt;h2&gt;Final words&lt;/h2&gt;
 &lt;p&gt;Neither of maps will ever change (unless you edit them manually).
-The next time we'll take a look at how to ensure the data is updated automatically on a regular basis.&lt;/p&gt;</content><category term="OpenStreetMap"></category><category term="mapping"></category><category term="uMap"></category><category term="EN"></category></entry><entry><title>Edulog #1</title><link href="https://karolinasurma.eu/edulog-1.html" rel="alternate"></link><published>2021-02-18T14:30:00+01:00</published><updated>2021-02-18T14:30:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-18:/edulog-1.html</id><summary type="html">&lt;h2&gt;Accomplishments&lt;/h2&gt;
+The next time I'll show how to ensure the data is updated automatically on a regular basis.&lt;/p&gt;</content><category term="OpenStreetMap"></category><category term="mapping"></category><category term="uMap"></category><category term="EN"></category></entry><entry><title>Edulog #1</title><link href="https://karolinasurma.eu/edulog-1.html" rel="alternate"></link><published>2021-02-18T14:30:00+01:00</published><updated>2021-02-18T14:30:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-18:/edulog-1.html</id><summary type="html">&lt;h2&gt;Accomplishments&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/vege-jmk_557579"&gt;Vege JMK - dynamic map&lt;/a&gt; showing raw data + &lt;a href="https://github.com/befeleme/vegan_JMK"&gt;GitHub repo with data&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://umap.openstreetmap.fr/en/map/veg-jmk-preprocessed_563879"&gt;static map&lt;/a&gt; showing preprocessed data (Proof of concept)&lt;/li&gt;
