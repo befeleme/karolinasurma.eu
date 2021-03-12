@@ -3,32 +3,47 @@
 The format of this weekly accomplishments may become more bi-weekly... &lt;/p&gt;
 &lt;h2&gt;Last week I learned&lt;/h2&gt;
 &lt;p&gt;Mostly the stuff related to my new workplace.&lt;/p&gt;
-&lt;p&gt;RPM packages
-- My daily lecture - &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/"&gt;Packaging Guidelines&lt;/a&gt;
-  - And their &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/"&gt;Pythonic version …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I started the new job on March 1st and all of my unfinished texts remain this way.
+&lt;p&gt;RPM packages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;My daily lecture - &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/"&gt;Packaging Guidelines&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;And their &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/"&gt;Pythonic version …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;I started the new job on March 1st and all of my unfinished texts remain this way.
 The format of this weekly accomplishments may become more bi-weekly... &lt;/p&gt;
 &lt;h2&gt;Last week I learned&lt;/h2&gt;
 &lt;p&gt;Mostly the stuff related to my new workplace.&lt;/p&gt;
-&lt;p&gt;RPM packages
-- My daily lecture - &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/"&gt;Packaging Guidelines&lt;/a&gt;
-  - And their &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/"&gt;Pythonic version&lt;/a&gt;
-- &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/ReviewGuidelines/"&gt;How to review RPM spec files&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Python packages 
-- &lt;a href="https://packaging.python.org/tutorials/packaging-projects/"&gt;Tutorial on packaging&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Community related
-- Crash course on &lt;a href="https://pythondev.readthedocs.io/diversity.html"&gt;diversity in Python&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;German snippets
-- I continue to fill in &lt;a href="https://apps.ankiweb.net/"&gt;Anki&lt;/a&gt; with new vocabulary and revise the old one.
-  I find it the best flash card application, mobile &lt;a href="https://f-droid.org/en/packages/com.ichi2.anki/"&gt;AnkiDroid can be found on f-droid&lt;/a&gt;.
-- "es" can be skipped if the whole clause plays the role of subject (2).
+&lt;p&gt;RPM packages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;My daily lecture - &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/"&gt;Packaging Guidelines&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;And their &lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/"&gt;Pythonic version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/ReviewGuidelines/"&gt;How to review RPM spec files&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python packages &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://packaging.python.org/tutorials/packaging-projects/"&gt;Tutorial on packaging&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Community related&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crash course on &lt;a href="https://pythondev.readthedocs.io/diversity.html"&gt;diversity in Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;German snippets&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I continue to fill in &lt;a href="https://apps.ankiweb.net/"&gt;Anki&lt;/a&gt; with new vocabulary and revise the old one.
+  I find it the best flash card application, mobile &lt;a href="https://f-droid.org/en/packages/com.ichi2.anki/"&gt;AnkiDroid can be found on f-droid&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;"es" can be skipped if the whole clause plays the role of subject (2).
 If the main clause stays at the beginning, there must be pronoun subject present, and the clause is followed by a comma (1a, 1b).
-The only applicable pronoun subject is "es", "das" can't be used instead.&lt;/p&gt;
+The only applicable pronoun subject is "es", "das" can't be used instead.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;1a. &lt;strong&gt;Es&lt;/strong&gt; ist notwendig, alle Aufgaben durchzusehen.&lt;/p&gt;
-&lt;p&gt;1b. Notwendig ist &lt;strong&gt;es&lt;/strong&gt;, alle Aufgaben durchzusehen.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Alle Aufgaben durchzusehen ist notwendig.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;1a) &lt;strong&gt;Es&lt;/strong&gt; ist notwendig, alle Aufgaben durchzusehen.&lt;/p&gt;
+&lt;p&gt;1b) Notwendig ist &lt;strong&gt;es&lt;/strong&gt;, alle Aufgaben durchzusehen.&lt;/p&gt;
+&lt;p&gt;2) Alle Aufgaben durchzusehen ist notwendig.&lt;/p&gt;
 &lt;/blockquote&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Edulog #2</title><link href="https://karolinasurma.eu/edulog-2.html" rel="alternate"></link><published>2021-02-25T13:03:00+01:00</published><updated>2021-02-25T13:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-25:/edulog-2.html</id><summary type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
 This includes taking long walks, playing board games and watching Doctor Who's last season.  &lt;/p&gt;
 &lt;p&gt;I received plenty of information about onboarding at my new employer which is held …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
