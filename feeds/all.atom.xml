@@ -1,5 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-03-12T17:03:00+01:00</updated><entry><title>Edulog #3</title><link href="https://karolinasurma.eu/edulog-3.html" rel="alternate"></link><published>2021-03-12T17:03:00+01:00</published><updated>2021-03-12T17:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-03-12:/edulog-3.html</id><summary type="html">&lt;p&gt;I started the new job on March 1st and all of my unfinished texts remain this way.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-03-20T14:00:00+01:00</updated><entry><title>Draw a map! (2/2)</title><link href="https://karolinasurma.eu/draw-a-map-2-2.html" rel="alternate"></link><published>2021-03-20T14:00:00+01:00</published><updated>2021-03-20T14:00:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-03-20:/draw-a-map-2-2.html</id><summary type="html">&lt;p&gt;In the &lt;a href="./draw-a-map-1.html"&gt;first part&lt;/a&gt; you've learned about a tool called uMap. 
+For some use cases a static map is enough.&lt;/p&gt;
+&lt;p&gt;OpenStreetMap is however very much alive and changes every second.
+You may want to reflect those changes in your map.
+Real time requests aren't feasible with current OSM state. 
+If …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In the &lt;a href="./draw-a-map-1.html"&gt;first part&lt;/a&gt; you've learned about a tool called uMap. 
+For some use cases a static map is enough.&lt;/p&gt;
+&lt;p&gt;OpenStreetMap is however very much alive and changes every second.
+You may want to reflect those changes in your map.
+Real time requests aren't feasible with current OSM state. 
+If you try to send too many of them, you may end up with a ban on Overpass servers.&lt;/p&gt;
+&lt;p&gt;Let's say you'd like to update the map nightly, which shouldn't be too hard on Overpass.&lt;/p&gt;
+&lt;h2&gt;Where to for lunch?&lt;/h2&gt;
+&lt;p&gt;My goal was to display all restaurants where I can eat in the region I live.
+I wanted to filter for places which serve &lt;em&gt;plant-based menu&lt;/em&gt; and display them on the map.
+This way I not only know where to go for lunch, but also have a visual clue when it comes to updating non-existent places. &lt;/p&gt;
+&lt;p&gt;Let's see how to proceed with such a map.&lt;/p&gt;
+&lt;p&gt;At this point you know:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;how to ask for the data you're interested in&lt;/li&gt;
+&lt;li&gt;how to take the data from Overpass and put them in the map&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What's the goal?&lt;/p&gt;
+&lt;p&gt;Automate the process and set it to ask for data periodically, every night.&lt;/p&gt;
+&lt;h2&gt;Git scraping for the rescue&lt;/h2&gt;
+&lt;p&gt;You need a machine to perform some actions in the middle of the night.
+The actions contain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;requesting the data&lt;/li&gt;
+&lt;li&gt;storing the data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Where to store data?&lt;/h3&gt;
+&lt;p&gt;For small data samples (like restaurants in your city), &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; can be a place of choice.
+Just remember, GitHub was not designed to be free database. 
+It won't let you store too much data in a repository.&lt;/p&gt;
+&lt;h3&gt;How to request data?&lt;/h3&gt;
+&lt;p&gt;There is a technique called &lt;a href="https://simonwillison.net/2020/Oct/9/git-scraping/"&gt;Git scraping&lt;/a&gt; shown by &lt;a href="https://honzajavorek.cz/"&gt;Honza Javorek&lt;/a&gt; on one &lt;a href="https://pyvo.cz/"&gt;Pyvo&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;GitHub provides a tool called GitHub Actions which you can set up to perform various tasks for you.
+Like for example... calling an API request and, in case the response file is changed, commit it automatically to a repository.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Git note&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you're reading this and struggle with terms like 'repository' or 'commit', consider learning about Git basics first, for example &lt;a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;How to get a valid URL to send requests?&lt;/h4&gt;
+&lt;p&gt;Once you've built an Overpass query that satisfies you, look for &lt;strong&gt;Export&lt;/strong&gt; option in the menu.
+Then find &lt;strong&gt;Query&lt;/strong&gt; and click on &lt;em&gt;compact&lt;/em&gt; in &lt;strong&gt;Convert to...&lt;/strong&gt; option. A new pane with the query will open. 
+Copy the displayed query and try it in another tab. 
+It should provide JSON data - you're set.  &lt;/p&gt;
+&lt;p&gt;To make things as easy as they can be, let's use bash command &lt;code&gt;curl&lt;/code&gt; to make a request. 
+&lt;code&gt;curl&lt;/code&gt; will take a URL to call as an argument, and the output will be directed to a file, like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;curl 'url_to_request' &amp;gt; my_data.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The actual example is a bit longer, mainly because API parameters in Overpass are quite verbose.
+Check my script &lt;a href="https://github.com/befeleme/vegan_JMK/blob/main/run.sh"&gt;run.sh&lt;/a&gt;. I call for 4 sets of data with 5-minute breaks in between.&lt;/p&gt;
+&lt;p&gt;The process of calling and storing takes place automatically. 
+See my configuration file in &lt;a href="https://github.com/befeleme/vegan_JMK/blob/main/.github/workflows/scrape.yml"&gt;scrape.yml&lt;/a&gt;.
+Let's ignore Python rows as they are not necessary for this project.
+The configuration says that each day at 2.15 AM an Ubuntu machine copies the code from my repository, executes the &lt;code&gt;run.sh&lt;/code&gt; script and in case the files have changed, commits them to repository as user &lt;em&gt;Automated&lt;/em&gt;.  &lt;/p&gt;
+&lt;p&gt;So the script runs every night but it commits now and then - when someone changes the restaurant's data. 
+The big benefit is I can track changes to the &lt;a href="https://github.com/befeleme/vegan_JMK/commit/5cad11ed48baee9880c5b60d0464ccf19fedc46b"&gt;date&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As a result there are several JSON files in &lt;code&gt;output&lt;/code&gt; folder.
+Let's connect them with the map!&lt;/p&gt;
+&lt;h2&gt;Point the map to remote data&lt;/h2&gt;
+&lt;p&gt;Pasting data to the map as it was shown in the previous post isn't the right way here.&lt;/p&gt;
+&lt;p&gt;I want to display different layers of data (100% plant-serving places, places with some options...- one layer per each JSON file from my repository).
+For each layer I want to set different color and properties. 
+This is achieved by setting &lt;strong&gt;Remote data&lt;/strong&gt; in Layers.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="layers" src="./images/umap-layers-overview.png"&gt;
+&lt;img alt="remote" src="./images/umap-layers-remote.png"&gt;&lt;/p&gt;
+&lt;p&gt;There is a field for URL with data. That's great. As it happens, we have an accessible remote storage of the data - we only need to paste the URL to &lt;strong&gt;raw&lt;/strong&gt; data, so that uMap parses it correctly.
+You'll get the raw data by clicking on the respective button.
+&lt;img alt="raw-data" src="./images/gh-raw-file.png"&gt;&lt;/p&gt;
+&lt;p&gt;Fill in the marked fields and click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="remote-data" src="./images/umap-remote.png"&gt;&lt;/p&gt;
+&lt;p&gt;One layer of data is imported and, what's more, it will be updated every time someone changes underlaying information.&lt;/p&gt;
+&lt;h2&gt;The result&lt;/h2&gt;
+&lt;iframe width="100%" height="600px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/vege-jmk_557579?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;datalayers=1584303%2C1584302%2C1584304%2C1581977%2C1581976%2C1581961%2C1581969#15/49.1991/16.6104"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="//umap.openstreetmap.fr/en/map/vege-jmk_557579"&gt;See full screen&lt;/a&gt;&lt;/p&gt;</content><category term="OpenStreetMap"></category><category term="mapping"></category><category term="uMap"></category><category term="EN"></category></entry><entry><title>Edulog #3</title><link href="https://karolinasurma.eu/edulog-3.html" rel="alternate"></link><published>2021-03-12T17:03:00+01:00</published><updated>2021-03-12T17:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-03-12:/edulog-3.html</id><summary type="html">&lt;p&gt;I started the new job on March 1st and all of my unfinished texts remain this way.
 The format of this weekly accomplishments may become more bi-weekly... &lt;/p&gt;
 &lt;h2&gt;Last week I learned&lt;/h2&gt;
 &lt;p&gt;Mostly the stuff related to my new workplace.&lt;/p&gt;
@@ -44,7 +121,12 @@ The only applicable pronoun subject is "es", "das" can't be used instead.&lt;/li
 &lt;p&gt;1a) &lt;strong&gt;Es&lt;/strong&gt; ist notwendig, alle Aufgaben durchzusehen.&lt;/p&gt;
 &lt;p&gt;1b) Notwendig ist &lt;strong&gt;es&lt;/strong&gt;, alle Aufgaben durchzusehen.&lt;/p&gt;
 &lt;p&gt;2) Alle Aufgaben durchzusehen ist notwendig.&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Edulog #2</title><link href="https://karolinasurma.eu/edulog-2.html" rel="alternate"></link><published>2021-02-25T13:03:00+01:00</published><updated>2021-02-25T13:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-25:/edulog-2.html</id><summary type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
+&lt;/blockquote&gt;
+&lt;p&gt;Polish snippets&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I read &lt;a href="https://lubimyczytac.pl/ksiazka/4944147/krol"&gt;Król&lt;/a&gt; by Szczepan Twardoch. 
+  The best way to spend your evenings in lockdown.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Edulog #2</title><link href="https://karolinasurma.eu/edulog-2.html" rel="alternate"></link><published>2021-02-25T13:03:00+01:00</published><updated>2021-02-25T13:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-25:/edulog-2.html</id><summary type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
 This includes taking long walks, playing board games and watching Doctor Who's last season.  &lt;/p&gt;
 &lt;p&gt;I received plenty of information about onboarding at my new employer which is held …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
 This includes taking long walks, playing board games and watching Doctor Who's last season.  &lt;/p&gt;
