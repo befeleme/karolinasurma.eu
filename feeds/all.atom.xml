@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-04-05T12:49:00+02:00</updated><entry><title>Edulog #4</title><link href="https://karolinasurma.eu/edulog-4.html" rel="alternate"></link><published>2021-04-05T12:49:00+02:00</published><updated>2021-04-05T12:49:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-04-05:/edulog-4.html</id><summary type="html">&lt;p&gt;That's been a ride. A bit of cold in the middle of March and diving deep in RPM ecosystem.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-05-05T17:19:00+02:00</updated><entry><title>Git submodules</title><link href="https://karolinasurma.eu/git-submodules.html" rel="alternate"></link><published>2021-05-05T17:19:00+02:00</published><updated>2021-05-05T17:19:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-05-05:/git-submodules.html</id><summary type="html">&lt;p&gt;As I swim through the new waters, some nasty gotchas wait for me in the currents.&lt;/p&gt;
+&lt;h2&gt;Overture&lt;/h2&gt;
+&lt;p&gt;Many times have I encountered a GitHub repository with some folders that look more like a hyperlink to another folders.&lt;/p&gt;
+&lt;p&gt;An example from &lt;a href="https://github.com/getpelican/pelican-themes"&gt;Pelican themes&lt;/a&gt; looks like that:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="submodules" src="./images/gh-submodules.png"&gt;&lt;/p&gt;
+&lt;p&gt;Notice the icons with the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As I swim through the new waters, some nasty gotchas wait for me in the currents.&lt;/p&gt;
+&lt;h2&gt;Overture&lt;/h2&gt;
+&lt;p&gt;Many times have I encountered a GitHub repository with some folders that look more like a hyperlink to another folders.&lt;/p&gt;
+&lt;p&gt;An example from &lt;a href="https://github.com/getpelican/pelican-themes"&gt;Pelican themes&lt;/a&gt; looks like that:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="submodules" src="./images/gh-submodules.png"&gt;&lt;/p&gt;
+&lt;p&gt;Notice the icons with the arrows and kind of weird name of the blue entries.&lt;/p&gt;
+&lt;h2&gt;Tricky part&lt;/h2&gt;
+&lt;p&gt;I wasn't paying much attention to them until I had to. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scenario&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You want to clone a repository containing those linked folders.
+So you run &lt;code&gt;git clone git://&amp;lt;your-repo-url&amp;gt;&lt;/code&gt; expecting the whole repository will be cloned to your disk.
+It is, but without those linked ones. 
+They are empty, no files, nada.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What not to do&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Enter the empty folders and try to &lt;code&gt;git pull&lt;/code&gt; the contents. This won't help.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is possible to do&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ask a more senior colleague if you have one nearby.
+Alternatively, ask your favorite search engine how to download the folder contents.
+The only problem is how to phrase the query to actually find anything meaningful. 
+I did, it took me enough time to see some sense in publishing the note.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What actually to do&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Look for &lt;em&gt;git submodule&lt;/em&gt; or just read &lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules"&gt;this chapter&lt;/a&gt; from excellent Pro Git book.&lt;/p&gt;
+&lt;p&gt;Go to your project root directory and run the commands:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;git submodule init&lt;/span&gt;
+&lt;span class="err"&gt;git submodule update&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The empty folders shall be populated now. :)&lt;/p&gt;</content><category term="Git"></category><category term="EN"></category><category term="coding"></category></entry><entry><title>Edulog #4</title><link href="https://karolinasurma.eu/edulog-4.html" rel="alternate"></link><published>2021-04-05T12:49:00+02:00</published><updated>2021-04-05T12:49:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-04-05:/edulog-4.html</id><summary type="html">&lt;p&gt;That's been a ride. A bit of cold in the middle of March and diving deep in RPM ecosystem.
 I tried to sink into &lt;a href="https://www.factorio.com/"&gt;Factorio&lt;/a&gt; to relax, but it keeps feeling as if I just went from one job to another. It has some real charm though, so I hope …&lt;/p&gt;</summary><content type="html">&lt;p&gt;That's been a ride. A bit of cold in the middle of March and diving deep in RPM ecosystem.
 I tried to sink into &lt;a href="https://www.factorio.com/"&gt;Factorio&lt;/a&gt; to relax, but it keeps feeling as if I just went from one job to another. It has some real charm though, so I hope I'll find my way around it.&lt;/p&gt;
 &lt;h2&gt;Accomplishments&lt;/h2&gt;
