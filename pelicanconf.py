@@ -56,3 +56,12 @@ MENUITEMS = (
     ('Categories', '/' + CATEGORIES_SAVE_AS),
     ('Archive', '/' + ARCHIVES_SAVE_AS),
 )
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight', 'guess_lang': False},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
