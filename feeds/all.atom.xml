@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-05-05T17:19:00+02:00</updated><entry><title>Git submodules</title><link href="https://karolinasurma.eu/git-submodules.html" rel="alternate"></link><published>2021-05-05T17:19:00+02:00</published><updated>2021-05-05T17:19:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-05-05:/git-submodules.html</id><summary type="html">&lt;p&gt;As I swim through the new waters, some nasty gotchas wait for me in the currents.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-06-22T19:22:00+02:00</updated><entry><title>Junior's mindset</title><link href="https://karolinasurma.eu/junior-s-mindset.html" rel="alternate"></link><published>2021-06-22T19:22:00+02:00</published><updated>2021-06-22T19:22:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-06-22:/junior-s-mindset.html</id><summary type="html">&lt;h2&gt;The good, the bad and the scary&lt;/h2&gt;
+&lt;p&gt;Ups and downs of your next technical role can be stressful. 
+They are to me. You are uncertain pretty much all the time and your experience from a different field doesn't really match the environment you look at.&lt;/p&gt;
+&lt;h3&gt;The good&lt;/h3&gt;
+&lt;p&gt;Let's start with …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;The good, the bad and the scary&lt;/h2&gt;
+&lt;p&gt;Ups and downs of your next technical role can be stressful. 
+They are to me. You are uncertain pretty much all the time and your experience from a different field doesn't really match the environment you look at.&lt;/p&gt;
+&lt;h3&gt;The good&lt;/h3&gt;
+&lt;p&gt;Let's start with the good ones!
+It certainly feels great when you solve an issue that was lying around for a few years. The timeline of accomplishment can be:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; Bug created      /me: print(&amp;quot;Hello, world&amp;quot;)        /me: Solves the bug
+───|───────────────────────|────────────────────────────────|───►
+ 2015                    2017                              2021
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or: you dig into some problem and understand what causes the error. 
+You bring the issue to the developer's attention, possibly already with a fix, and wait thinking: have I done legit job?
+The next day you see all the happy emojis on your Pull Request and people are telling you "good job" and merge the changes and the rainbow appears above your desk.&lt;/p&gt;
+&lt;h3&gt;The scary&lt;/h3&gt;
+&lt;p&gt;The uncertainty. 
+You think you did a good job or a good-enough job, and it could be - but there is always something to improve. 
+Every task is a new task, every way is a new way, you look around for gotchas and still not get all of them.
+Now, this isn't anything particularly bad. 
+It's understandable you're new, don't know the conventions, need to learn the stuff. 
+No one makes you feel like you're a con. You're probably &lt;strong&gt;the only one&lt;/strong&gt; thinking that.
+And you need to prove to &lt;strong&gt;the whole world&lt;/strong&gt; you're worthy.&lt;/p&gt;
+&lt;h3&gt;The bad&lt;/h3&gt;
+&lt;p&gt;It's not a role that's stressful, it's you bringing the pressure upon yourself. 
+In home office regime you can't go to the office and share team's vibe.
+You don't have the usual means of disassembling the bomb by getting along with people, small talking, venting the frustrations and sharing the joys. 
+You don't get as much of the external validation, such needed at the start.
+It's you and your desk and your computer, your mailbox and all the thoughts running through your head.&lt;/p&gt;
+&lt;h3&gt;What helps?&lt;/h3&gt;
+&lt;p&gt;Vent with someone you trust: be it your peer, manager, partner, friend.&lt;/p&gt;
+&lt;p&gt;Write a blog post which you hide in drafts for a few weeks.&lt;/p&gt;
+&lt;p&gt;Find some other juniors or career switchers in similar mode, talking to them can be beneficial, you will no longer feel like an isolated island. &lt;/p&gt;
+&lt;p&gt;Go to the gym. Why beat the whole world when you can beat yourself?&lt;/p&gt;
+&lt;p&gt;Write a brag document - record every success you've made so far. Read it often.&lt;/p&gt;
+&lt;p&gt;And just keep hanging in there. The mood will change in time as you get more experienced and independent. &lt;/p&gt;
+&lt;p&gt;And... at some point you may even reconsider publishing that buried post. There are others on the same path out there. Help them feel less lonely.&lt;/p&gt;</content><category term="Currents"></category><category term="EN"></category></entry><entry><title>Git submodules</title><link href="https://karolinasurma.eu/git-submodules.html" rel="alternate"></link><published>2021-05-05T17:19:00+02:00</published><updated>2021-05-05T17:19:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-05-05:/git-submodules.html</id><summary type="html">&lt;p&gt;As I swim through the new waters, some nasty gotchas wait for me in the currents.&lt;/p&gt;
 &lt;h2&gt;Overture&lt;/h2&gt;
 &lt;p&gt;Many times have I encountered a GitHub repository with some folders that look more like a hyperlink to another folders.&lt;/p&gt;
 &lt;p&gt;An example from &lt;a href="https://github.com/getpelican/pelican-themes"&gt;Pelican themes&lt;/a&gt; looks like that:&lt;/p&gt;
@@ -27,8 +67,8 @@ I did, it took me enough time to see some sense in publishing the note.&lt;/p&gt
 &lt;p&gt;&lt;strong&gt;What actually to do&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Look for &lt;em&gt;git submodule&lt;/em&gt; or just read &lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules"&gt;this chapter&lt;/a&gt; from excellent Pro Git book.&lt;/p&gt;
 &lt;p&gt;Go to your project root directory and run the commands:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;git submodule init&lt;/span&gt;
-&lt;span class="err"&gt;git submodule update&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git submodule init
+git submodule update
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
@@ -76,7 +116,7 @@ I see that my uncertainty regarding how to behave in business situations is just
 I identified some situations that made me uncomfortable in the past which were just a neutral part of the &lt;em&gt;source&lt;/em&gt; culture. 
 Hopefully I'll find time to write down some notes from the book.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="Weekly notes"></category><category term="EN"></category></entry><entry><title>Draw a map! (2/2)</title><link href="https://karolinasurma.eu/draw-a-map-2-2.html" rel="alternate"></link><published>2021-03-20T14:00:00+01:00</published><updated>2021-03-20T14:00:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-03-20:/draw-a-map-2-2.html</id><summary type="html">&lt;p&gt;In the &lt;a href="./draw-a-map-1.html"&gt;first part&lt;/a&gt; you've learned about a tool called uMap. 
+&lt;/ul&gt;</content><category term="Notes"></category><category term="EN"></category></entry><entry><title>Draw a map! (2/2)</title><link href="https://karolinasurma.eu/draw-a-map-2-2.html" rel="alternate"></link><published>2021-03-20T14:00:00+01:00</published><updated>2021-03-20T14:00:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-03-20:/draw-a-map-2-2.html</id><summary type="html">&lt;p&gt;In the &lt;a href="./draw-a-map-1.html"&gt;first part&lt;/a&gt; you've learned about a tool called uMap. 
 For some use cases a static map is enough.&lt;/p&gt;
 &lt;p&gt;OpenStreetMap is however very much alive and changes every second.
 You may want to reflect those changes in your map.
@@ -203,7 +243,7 @@ The only applicable pronoun subject is "es", "das" can't be used instead.&lt;/li
 &lt;ul&gt;
 &lt;li&gt;I read &lt;a href="https://lubimyczytac.pl/ksiazka/4944147/krol"&gt;Król&lt;/a&gt; by Szczepan Twardoch. 
   The best way to spend your evenings in lockdown.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Edulog #2</title><link href="https://karolinasurma.eu/edulog-2.html" rel="alternate"></link><published>2021-02-25T13:03:00+01:00</published><updated>2021-02-25T13:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-25:/edulog-2.html</id><summary type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
+&lt;/ul&gt;</content><category term="Notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Edulog #2</title><link href="https://karolinasurma.eu/edulog-2.html" rel="alternate"></link><published>2021-02-25T13:03:00+01:00</published><updated>2021-02-25T13:03:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-25:/edulog-2.html</id><summary type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
 This includes taking long walks, playing board games and watching Doctor Who's last season.  &lt;/p&gt;
 &lt;p&gt;I received plenty of information about onboarding at my new employer which is held …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My "free" month is at its end and I decided to spend most of the time doing whatever I felt like to.
 This includes taking long walks, playing board games and watching Doctor Who's last season.  &lt;/p&gt;
@@ -231,7 +271,7 @@ Even though it was my call to switch jobs in the middle of pandemic, I still fee
 &lt;h2&gt;Plans and hopes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;I found out about &lt;a href="https://cs50.harvard.edu/x/2021/"&gt;CS50&lt;/a&gt; and decided to take a look at C lectures. &lt;/li&gt;
-&lt;/ul&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Draw a map! (1/2)</title><link href="https://karolinasurma.eu/draw-a-map-1.html" rel="alternate"></link><published>2021-02-24T14:38:00+01:00</published><updated>2021-02-24T14:38:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-24:/draw-a-map-1.html</id><summary type="html">&lt;h2&gt;uMap&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="Notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Draw a map! (1/2)</title><link href="https://karolinasurma.eu/draw-a-map-1.html" rel="alternate"></link><published>2021-02-24T14:38:00+01:00</published><updated>2021-02-24T14:38:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-24:/draw-a-map-1.html</id><summary type="html">&lt;h2&gt;uMap&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://umap.openstreetmap.fr/en/"&gt;uMap&lt;/a&gt; is a tool to create custom maps on the OpenStreetMap layers.
 In order to start creating maps, one needs to have an &lt;strong&gt;OSM account&lt;/strong&gt; and click on "Create a map" on the uMap homepage.
 There is a few possibilities how to get data to the map.&lt;/p&gt;
@@ -333,7 +373,7 @@ Inspired by the story of &lt;a href="https://hedgedoc.org/history/"&gt;HegdeDoc&
 &lt;ul&gt;
 &lt;li&gt;listen to the story of ownCloud CTO who &lt;a href="https://archive.fosdem.org/2018/schedule/event/nextcloud/"&gt;forked his repo and started Nextcloud&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;check out the &lt;a href="https://fallofcivilizationspodcast.com/"&gt;Fall of civilizations&lt;/a&gt; podcast &lt;/li&gt;
-&lt;/ul&gt;</content><category term="Weekly notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Advent of Code 2020</title><link href="https://karolinasurma.eu/advent-of-code-2020.html" rel="alternate"></link><published>2021-02-17T16:36:00+01:00</published><updated>2021-02-17T16:36:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-17:/advent-of-code-2020.html</id><summary type="html">&lt;h2&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="Notes"></category><category term="education"></category><category term="EN"></category></entry><entry><title>Advent of Code 2020</title><link href="https://karolinasurma.eu/advent-of-code-2020.html" rel="alternate"></link><published>2021-02-17T16:36:00+01:00</published><updated>2021-02-17T16:36:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-02-17:/advent-of-code-2020.html</id><summary type="html">&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;This year I joined the challenge with the intention to make it to the end, no matter what.
 I did it out of curiosity: with the aim to challenge my Python skill and have some brain exercise.
 As a beginner I solved first puzzles in the previous years but …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Intro&lt;/h2&gt;
