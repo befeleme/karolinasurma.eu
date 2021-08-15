@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-06-22T19:22:00+02:00</updated><entry><title>Junior's mindset</title><link href="https://karolinasurma.eu/junior-s-mindset.html" rel="alternate"></link><published>2021-06-22T19:22:00+02:00</published><updated>2021-06-22T19:22:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-06-22:/junior-s-mindset.html</id><summary type="html">&lt;h2&gt;The good, the bad and the scary&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-08-15T17:38:00+02:00</updated><entry><title>The debug tale</title><link href="https://karolinasurma.eu/the-debug-tale.html" rel="alternate"></link><published>2021-08-15T17:38:00+02:00</published><updated>2021-08-15T17:38:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-08-15:/the-debug-tale.html</id><summary type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
+&lt;p&gt;The word anyone attempting programming knows from the almost beginning.
+You know, the moment you learn: if it doesn't work, look at the traceback, then add 153 &lt;code&gt;print&lt;/code&gt; statements, then try to understand where the heck you forgot the missing parenthesis.&lt;/p&gt;
+&lt;p&gt;When some clever programmers told me to start …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
+&lt;p&gt;The word anyone attempting programming knows from the almost beginning.
+You know, the moment you learn: if it doesn't work, look at the traceback, then add 153 &lt;code&gt;print&lt;/code&gt; statements, then try to understand where the heck you forgot the missing parenthesis.&lt;/p&gt;
+&lt;p&gt;When some clever programmers told me to start using debugger, I gave it a try. 
+But even after attending some workshops and reading tutorials, I wasn't sure why I'd ever want to use it.
+After all, I could just run the application and see where it crashes.&lt;/p&gt;
+&lt;h2&gt;The right tool for the task. Which task?&lt;/h2&gt;
+&lt;p&gt;Today I think it's a matter of presenting the use cases.
+The typical story would be: &lt;em&gt;I write the application and it behaves strangely. So I run a debugger and...&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;My guess is that this is where the beginner stops. 
+When all you've ever written are one-file scripts or very small programs, it sounds as if it's an overkill. Print &amp;amp; tracebacks will do. &lt;/p&gt;
+&lt;p&gt;BTW, I recently found some clever senior programmers who admitted they use &lt;code&gt;print&lt;/code&gt; too! No reason to be ashamed!&lt;/p&gt;
+&lt;p&gt;Let me present the other use cases that a junior may be more likely to meet.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I have this script/tool that should do X. When I run it, it doesn't do X, instead it produces Y. I want to understand why.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;or: &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I want to contribute to a big project that I found on GitHub which has got plenty of tasks labeled "Good first issue". There is a bug - when you do A, the B's output is corrupted. I want to understand the relationship between A and B.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;or - my &lt;em&gt;eureka&lt;/em&gt; case:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I use the project that bundles a lot of libraries within. I want to use it with the libraries from the system instead. I want to test that it still works as expected.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The common features of those use cases are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I'm not the author of the original code.&lt;/li&gt;
+&lt;li&gt;I have to read a lot of code lines in order to start working on a task.&lt;/li&gt;
+&lt;li&gt;The applications I want to understand don't have the conventional problems - they don't crash, no traceback is involved.&lt;/li&gt;
+&lt;li&gt;The more complicated program, the more context there is to keep through many function calls.&lt;/li&gt;
+&lt;li&gt;Constant adding and removing 153 &lt;code&gt;print&lt;/code&gt; statements would be pain in the... fingers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Humans - not the right tool for the task&lt;/h2&gt;
+&lt;p&gt;As a human without modern tools, you'd have to find that line and start displaying stuff: print variable's contents, check the function's call, find the function's definition, print some variables there, see there is another function's call making some transformation with your initial variable, so check its definition and -- why not -- add more prints there.&lt;/p&gt;
+&lt;p&gt;You could go the other way around and start with some import buried deep down in the module, and gradually find your way up to the user interface.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Humans are capable of (if really motivated to...), but in fact don't excel in keeping the context through many files and levels of hierarchy.&lt;/strong&gt;
+A computer is much better suited for the task. &lt;/p&gt;
+&lt;p&gt;Depending on what tool you use, setting up a debugger can be as easy as setting a single breakpoint on the line that you're interested in. 
+Now you have the tools to step into the functions and dig as deep as you need to.
+You can see the contents of the variables or arguments that were passed on the go.
+You can see the boolean evaluation of the statements and play interactively with the program's current state.&lt;/p&gt;
+&lt;h2&gt;Into the details&lt;/h2&gt;
+&lt;p&gt;I came across this talk by Nina Zakharenko which I recommend if you want to get a sense of how a debugger can be useful for you: &lt;a href="https://www.youtube.com/watch?v=5AYIe-3cD-s"&gt;Goodbye Print, Hello Debugger!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let me include also the article about the various debugging techniques (not focused entirely on debuggers) which may be interesting in those traditional use cases, when it's your own application you deal with. &lt;a href="https://towardsdatascience.com/ultimate-guide-to-python-debugging-854dea731e1b"&gt;Ultimate Guide to Python Debugging&lt;/a&gt; by Martin Heinz provides the means to having a clarity of how your program actually works. &lt;/p&gt;
+&lt;h2&gt;Post scriptum&lt;/h2&gt;
+&lt;p&gt;Finding a way to include the debugger into your workflow is not a trivial quest.
+If you feel you haven't really found the convincing use case yet, there is nothing wrong to it.&lt;/p&gt;
+&lt;p&gt;In my original case, I realized it'd be great to use the debugger just as I headed to the &lt;strong&gt;last&lt;/strong&gt; item on my library's list.
+I would have saved many hours if I used it right from the start.
+The taste of learning is sometimes bitter.&lt;/p&gt;
+&lt;p&gt;Since the &lt;em&gt;eureka&lt;/em&gt; moment I started using the debugger baked in my IDE more often. 
+It is especially helpful when a script written by someone else doesn't produce the output I've expected. 
+Ironically enough, the tool designed to find the flaws in the code seems to be as good in debugging humans.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Oh, and by the way... If someone tells you that writing a readable code is important, just believe them.&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="Python"></category><category term="EN"></category><category term="coding"></category></entry><entry><title>Junior's mindset</title><link href="https://karolinasurma.eu/junior-s-mindset.html" rel="alternate"></link><published>2021-06-22T19:22:00+02:00</published><updated>2021-06-22T19:22:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-06-22:/junior-s-mindset.html</id><summary type="html">&lt;h2&gt;The good, the bad and the scary&lt;/h2&gt;
 &lt;p&gt;Ups and downs of your next technical role can be stressful. 
 They are to me. You are uncertain pretty much all the time and your experience from a different field doesn't really match the environment you look at.&lt;/p&gt;
 &lt;h3&gt;The good&lt;/h3&gt;
