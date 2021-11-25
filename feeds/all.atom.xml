@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-08-15T17:38:00+02:00</updated><entry><title>The debug tale</title><link href="https://karolinasurma.eu/the-debug-tale.html" rel="alternate"></link><published>2021-08-15T17:38:00+02:00</published><updated>2021-08-15T17:38:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-08-15:/the-debug-tale.html</id><summary type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2021-11-25T17:28:00+01:00</updated><entry><title>PyLadies at OpenAlt (CZ)</title><link href="https://karolinasurma.eu/pyladies-at-openalt-cz.html" rel="alternate"></link><published>2021-11-25T17:28:00+01:00</published><updated>2021-11-25T17:28:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-11-25:/pyladies-at-openalt-cz.html</id><summary type="html">&lt;p&gt;On the first November weekend Anežka Müller and me delivered a talk about PyLadies in the Czech Republic.
+We wanted to answer the questions people may have about what and why we do.
+We also shared some internal thoughts how we aim to build a sustainable format of community courses …&lt;/p&gt;</summary><content type="html">&lt;p&gt;On the first November weekend Anežka Müller and me delivered a talk about PyLadies in the Czech Republic.
+We wanted to answer the questions people may have about what and why we do.
+We also shared some internal thoughts how we aim to build a sustainable format of community courses and how we deal with the inevitable perils of community activities - 
+burnout (both on the side of the attendees and our volunteers).&lt;/p&gt;
+&lt;p&gt;The talk was in Czech.
+Slides are available at the &lt;a href="https://openalt.cz/2021/slides/karolina-surma-anezka-muller-pyladies-kdo-kde-proc-a-jak.pdf"&gt;conference's webpage&lt;/a&gt;.
+It's available on &lt;a href="https://youtu.be/UGY3yhsY3NQ?t=9032"&gt;YouTube&lt;/a&gt; as a single stream, but we're hoping for a cut and enhanced version - the audio seems significantly worse than we expected.&lt;/p&gt;
+&lt;p&gt;There were quite a bunch of people attending the talk which is a nice result for a sunny Saturday.
+I was excited to see two of my close friends from abroad to come and hear our Czech speech. &lt;/p&gt;
+&lt;h2&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;I wanted to do something for the OpenAlt as I benefited from their talks and workshops for a few years in a row now.
+The online format gave me hope we could prepare something more country-centric,
+but in the end it was more about our local Brno chapter.&lt;/p&gt;
+&lt;p&gt;Martina from Ostrava's PyLadies helped us preparing the talk outline.
+For the rest of the talk we teamed up with Anežka and I'm super grateful she agreed to do this together.
+I'm still impressed how smooth the later preparations were and I find Anežka's insights about the mission and vision especially valuable. 
+We should definitely do more in the future.&lt;/p&gt;</content><category term="PyLadies"></category><category term="EN"></category><category term="talks"></category></entry><entry><title>The debug tale</title><link href="https://karolinasurma.eu/the-debug-tale.html" rel="alternate"></link><published>2021-08-15T17:38:00+02:00</published><updated>2021-08-15T17:38:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-08-15:/the-debug-tale.html</id><summary type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
 &lt;p&gt;The word anyone attempting programming knows from the almost beginning.
 You know, the moment you learn: if it doesn't work, look at the traceback, then add 153 &lt;code&gt;print&lt;/code&gt; statements, then try to understand where the heck you forgot the missing parenthesis.&lt;/p&gt;
 &lt;p&gt;When some clever programmers told me to start …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
