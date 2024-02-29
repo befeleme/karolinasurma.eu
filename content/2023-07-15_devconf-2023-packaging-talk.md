@@ -14,6 +14,7 @@ That's a new - I have no issues talking at the conferences, but till now it was 
 This was the first technical talk I wanted to deliver.
 
 I learned some things on the way!
+
 - live demos aren't the greatest idea of all times. it's much better to have a static code snippets in the presentation and demo with the interested parties afterwards
 - researching a new topic takes even 10x more than preparing a topic you're already an expert in - I spent dozens of hours preparing
 - rehearse, rehearse, rehearse. 15 or 20 minutes is nothing if you're nervous, get into detailed explanation or jump to another topic in stress
