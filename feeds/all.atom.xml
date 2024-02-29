@@ -13,12 +13,14 @@ I wouldn't have believed that such an invisible (for the outsider) topic can emp
 &lt;p&gt;This year I wanted to talk at DevConf about something related to my work.
 That's a new - I have no issues talking at the conferences, but till now it was always community and education-centered.
 This was the first technical talk I wanted to deliver.&lt;/p&gt;
-&lt;p&gt;I learned some things on the way!
-- live demos aren't the greatest idea of all times. it's much better to have a static code snippets in the presentation and demo with the interested parties afterwards
-- researching a new topic takes even 10x more than preparing a topic you're already an expert in - I spent dozens of hours preparing
-- rehearse, rehearse, rehearse. 15 or 20 minutes is nothing if you're nervous, get into detailed explanation or jump to another topic in stress
-- also, while rehearsing, it's good to note down all weak points and fill in the information gaps. It helped me understand better my own work
-- &lt;a href="https://revealjs.com/"&gt;reveal.js&lt;/a&gt; is a great presentation framework easy enough for people who don't enjoy digging in css. And publishing it on GitHub takes only a few clicks!&lt;/p&gt;
+&lt;p&gt;I learned some things on the way!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;live demos aren't the greatest idea of all times. it's much better to have a static code snippets in the presentation and demo with the interested parties afterwards&lt;/li&gt;
+&lt;li&gt;researching a new topic takes even 10x more than preparing a topic you're already an expert in - I spent dozens of hours preparing&lt;/li&gt;
+&lt;li&gt;rehearse, rehearse, rehearse. 15 or 20 minutes is nothing if you're nervous, get into detailed explanation or jump to another topic in stress&lt;/li&gt;
+&lt;li&gt;also, while rehearsing, it's good to note down all weak points and fill in the information gaps. It helped me understand better my own work&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://revealjs.com/"&gt;reveal.js&lt;/a&gt; is a great presentation framework easy enough for people who don't enjoy digging in css. And publishing it on GitHub takes only a few clicks!&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Effects&lt;/h2&gt;
 &lt;p&gt;My talk was called &lt;em&gt;Fedora package update? Assess its impact in Copr&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://befeleme.github.io/devconf-2023/"&gt;Slides from the presentation&lt;/a&gt;&lt;/p&gt;
