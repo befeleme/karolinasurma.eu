@@ -1,5 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2023-09-01T18:55:00+02:00</updated><entry><title>EuroPython in Prague</title><link href="https://karolinasurma.eu/europython-in-prague.html" rel="alternate"></link><published>2023-09-01T18:55:00+02:00</published><updated>2023-09-01T18:55:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2023-09-01:/europython-in-prague.html</id><summary type="html">&lt;p&gt;It almost feels as if this year was the first real one after Covid! 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2024-02-29T16:18:00+01:00</updated><entry><title>fedrq - querying Fedora repositories</title><link href="https://karolinasurma.eu/fedrq-querying-fedora-repositories.html" rel="alternate"></link><published>2024-02-29T16:18:00+01:00</published><updated>2024-02-29T16:18:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2024-02-29:/fedrq-querying-fedora-repositories.html</id><summary type="html">&lt;h2&gt;Querying repositories&lt;/h2&gt;
+&lt;p&gt;Part of my $DAILYJOB is digging in multiple Fedora repositories.
+Every time I prepare a package update, I check whether the update has a potential to break something.
+Typically I set up lists of packages that require my package and build them in a isolated environment, before hitting …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Querying repositories&lt;/h2&gt;
+&lt;p&gt;Part of my $DAILYJOB is digging in multiple Fedora repositories.
+Every time I prepare a package update, I check whether the update has a potential to break something.
+Typically I set up lists of packages that require my package and build them in a isolated environment, before hitting the real Fedora.
+I heavily use Copr as a test bed (described in detail in the talk from &lt;a href="./devconf-2023-packaging-talk.html"&gt;DevConf 2023&lt;/a&gt;).
+In that talk I show and comment a bunch of repoqueries.
+Repoqueries do the job, but they're nearly-impossible to come up with (correctly) and if I lost my bash history, I'd be left crying on the floor.
+(&lt;em&gt;Not really though&lt;/em&gt;, in the end I've got the talk recording \&amp;lt;evil laughter&gt;).&lt;/p&gt;
+&lt;h2&gt;fedrq&lt;/h2&gt;
+&lt;p&gt;This is where &lt;a href="https://fedrq.gtmx.me/"&gt;fedrq&lt;/a&gt; comes to the scene. A new tool with a new approach by an incredibly active Fedora community member, gotmax23.
+I spent a jolly day with it and decided to create this cheatsheet to help me translate my use cases to fedrq and ease the migration.&lt;/p&gt;
+&lt;h2&gt;Cheatsheet&lt;/h2&gt;
+&lt;h3&gt;formatters&lt;/h3&gt;
+&lt;p&gt;Powerful feature of the tool; list them all with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq formatters --attrs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And format the output of the tool with &lt;code&gt;-F &amp;lt;formatter&amp;gt;&lt;/code&gt;.
+Many more things are possible, refer to &lt;a href="https://fedrq.gtmx.me/fedrq1/#formatters_1"&gt;the documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What package does a file belong to?&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;# Fedora Rawhide
+$ fedrq pkgs -P /usr/bin/python3
+# Fedora 39 (-b, --branch)
+$ fedrq pkgs -b f39 -P /usr/bin/python3
+# Koji - format output with name-version-release-repository
+$ fedrq pkgs -r @koji:rawhide -P /usr/bin/python3 -F nevrr
+# Copr repository (-r, --repo)
+$ fedrq pkgs -r @copr:@python/python3.13 -P /usr/bin/python3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;List all files from the package&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq pkgs python3-rich -F files
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;What's the full package name?&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq pkgs python-rich
+python-rich-13.7.0-5.fc40.src
+
+$ fedrq pkgs python3-rich
+python3-rich-13.7.0-5.fc40.noarch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;What packages will be built from my source component?&lt;/h3&gt;
+&lt;p&gt;I can also format output to get only names: &lt;code&gt;-F name&lt;/code&gt; or full nevr &lt;code&gt;-F nevr&lt;/code&gt;; or skip formatter at all.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq subpkgs python-sphinx -F nev
+python-sphinx-doc-1:7.2.6
+python3-sphinx-1:7.2.6
+python3-sphinx-latex-1:7.2.6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;The opposite: What source rpm comes my built package from?&lt;/h3&gt;
+&lt;p&gt;It can take also the base name: &lt;code&gt;python3-sphinx-latex&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq pkgs python3-sphinx-latex-1:7.2.6-6.fc40.noarch -F source
+python-sphinx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Provides and requirements of my components&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq pkgs python3-sphinx -F provides
+python3-sphinx = 1:7.2.6-6.fc40
+python-sphinx = 1:7.2.6-6.fc40
+python3.12-sphinx = 1:7.2.6-6.fc40
+python3.12dist(sphinx) = 7.2.6
+python3dist(sphinx) = 7.2.6
+
+# runtime requirements
+$ fedrq pkgs python3-rich -F requires
+python(abi) = 3.12
+(python3.12dist(pygments) &amp;lt; 3~~ with python3.12dist(pygments) &amp;gt;= 2.13)
+python3.12dist(markdown-it-py) &amp;gt;= 2.2
+
+# buildtime requirements
+$ fedrq pkgs python-rich -F requires
+python3-devel
+python3dist(packaging)
+pyproject-rpm-macros
+python3dist(pytest)
+python3dist(setuptools)
+python3dist(attrs)
+python3dist(pip) &amp;gt;= 19
+(python3dist(tomli) if python3-devel &amp;lt; 3.11)
+python3dist(poetry-core) &amp;gt;= 1
+(python3dist(pygments) &amp;lt; 3~~ with python3dist(pygments) &amp;gt;= 2.13)
+python3dist(markdown-it-py) &amp;gt;= 2.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Dependencies&lt;/h3&gt;
+&lt;h4&gt;What other packages need my binary package?&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;whatrequires&lt;/code&gt; equals to &lt;code&gt;wr&lt;/code&gt;.
+&lt;code&gt;whatrequires-src&lt;/code&gt; equals to &lt;code&gt;wrsrc&lt;/code&gt;.
+&lt;code&gt;-s, --src&lt;/code&gt; means only source rpms.
+&lt;code&gt;-S, --nosrc&lt;/code&gt; means exclude source rpms.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For Python &lt;code&gt;-s/-S&lt;/code&gt; may not seem relevant, as source and built components are usually named differently,
+but for any other components it's crucial, compare e.g.
+&lt;code&gt;$ fedrq pkgs ocrmypdf -S -F requires&lt;/code&gt; and
+&lt;code&gt;$ fedrq pkgs ocrmypdf -F requires&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;equivalent to: &lt;code&gt;repoquery -q --repo=rawhide{,-source} --whatrequires python3-rich&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq whatrequires python3-rich
+
+# It can work with virtual provides too!
+# don&amp;#39;t use it though, it only matches the literal provides
+$ fedrq whatrequires -s &amp;#39;python3dist(rich)&amp;#39; -F name
+
+# released Fedora: both fedora and updates repos
+$ fedrq whatrequires --branch f38 python3-rich
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Only interested in fedora repo?
+equivalent to: &lt;code&gt;repoquery --repo=fedora{,-source} --releasever 38 --whatrequires python3-rich&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq whatrequires --branch f38 --repo @release python3-rich
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;What packages require any subpackage of my srpm?&lt;/h4&gt;
+&lt;p&gt;equivalent to: &lt;code&gt;repoquery -q --repo=rawhide{,-source} --whatrequires python3-sphinx --whatrequires python3-sphinx-latex --whatrequires python-sphinx-doc&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;# wrsrc is used with the source package name
+$ fedrq wrsrc python-sphinx | wc -l
+821
+
+# compared to this - it only takes care about this concrete built package name
+$ fedrq wr python3-sphinx | wc -l
+815
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;What packages require python-sphinx' components on build time?&lt;/h4&gt;
+&lt;p&gt;equivalent to: &lt;code&gt;repoquery -q --repo=rawhide{,-source} --whatrequires python3-sphinx --whatrequires python3-sphinx-latex --whatrequires python-sphinx-doc | grep 'src$' | pkgname | sort | uniq | wc -l&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq wrsrc -s python-sphinx -F source | wc -l
+739
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;The Big Python Query&lt;/h4&gt;
+&lt;p&gt;Get names of the source packages in Koji that require any of the given Python provides - needed for Python rebuilds.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ repoquery --repo=koji --source --whatrequires &amp;#39;libpython3.12.so.1.0()(64bit)&amp;#39; --whatrequires &amp;#39;python(abi) = 3.12&amp;#39; --whatrequires &amp;#39;python3.12dist(*)&amp;#39; | pkgname | env LANG=en_US.utf-8 sort | uniq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Fedrq equivalent:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;fedrq wr --repo=&amp;#39;@koji:rawhide&amp;#39; &amp;#39;python3.12dist(*)&amp;#39; &amp;#39;python(abi) = 3.12&amp;#39; &amp;#39;libpython3.12.so.1.0()(64bit)&amp;#39; -F source | env LANG=en_US.utf-8 sort | uniq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Nice little things repoquery doesn't provide easily&lt;/h3&gt;
+&lt;p&gt;Breakdown of the buildtime, runtime deps and their srpm names:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq whatrequires --branch f38 python3-rich -F breakdown
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Resolve the packages required by rich on runtime.
+Same with build time - just change the queried package name&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq pkgs python3-rich -F requires | fedrq pkgs -iSP
+python3-3.12.2-2.fc41.x86_64
+python3-markdown-it-py-3.0.0-4.fc40.noarch
+python3-pygments-2.17.2-3.fc40.noarch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Print lines matching the required package in packages that require the given package (yeah, I can't explain it).
+Useful for finding packages that use aggresive version constraints.
+Semantically the same as our notoriously horrible oneliner: &lt;code&gt;for pkg in $(repoquery -q --repo=rawhide{,-source} --whatrequires python3-sphinx); do repoquery -q --repo=rawhide{,-source} --requires $pkg | grep -E '\bsphinx\b' | grep '&amp;lt;' &amp;amp;&amp;amp; echo -e "${pkg}\n"; done&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq wr -F narm:python3-sphinx python3-sphinx | grep &amp;quot;&amp;lt;&amp;quot;
+# only interested in runtime? -S means --nosrc
+$ fedrq wr -S -F narm:python3-sphinx python3-sphinx | grep &amp;quot;&amp;lt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Fedora"></category><category term="EN"></category></entry><entry><title>EuroPython in Prague</title><link href="https://karolinasurma.eu/europython-in-prague.html" rel="alternate"></link><published>2023-09-01T18:55:00+02:00</published><updated>2023-09-01T18:55:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2023-09-01:/europython-in-prague.html</id><summary type="html">&lt;p&gt;It almost feels as if this year was the first real one after Covid! 
 When it comes to Python, 2023 has brought two big conferences to Prague: EuroPython and, after a covid break, PyCon CZ.&lt;/p&gt;
 &lt;p&gt;A short report of PyLadies' activities can be found on the &lt;a href="https://blog.python.cz/pyladies-byly-jsme-na-europythonu"&gt;official blog&lt;/a&gt; of the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It almost feels as if this year was the first real one after Covid! 
 When it comes to Python, 2023 has brought two big conferences to Prague: EuroPython and, after a covid break, PyCon CZ.&lt;/p&gt;
