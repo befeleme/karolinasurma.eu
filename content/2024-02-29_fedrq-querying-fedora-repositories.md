@@ -1,7 +1,7 @@
 Title: fedrq - querying Fedora repositories
 Date: 2024-02-29 16:18
 Category: Fedora
-Tags: EN
+Tags: EN, fedora, tools
 Slug: fedrq-querying-fedora-repositories
 
 ## Querying repositories

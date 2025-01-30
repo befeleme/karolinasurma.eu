@@ -1,7 +1,7 @@
 Title: PyLadies at DevConf
 Date: 2022-02-11 18:16
 Category: PyLadies
-Tags: EN, talks
+Tags: EN, talks, conferences, community
 Slug: pyladies-at-devconf
 
 

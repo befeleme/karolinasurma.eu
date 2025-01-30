@@ -1,7 +1,7 @@
 Title: EuroPython in Prague
 Date: 2023-09-01 18:55
 Category: PyLadies
-Tags: EN
+Tags: EN, conferences
 Slug: europython-in-prague
 
 It almost feels as if this year was the first real one after Covid! 

@@ -1,7 +1,7 @@
 Title: Git submodules
 Date: 2021-05-05 17:19
 Category: Git
-Tags: EN, coding
+Tags: EN, coding, tools
 Slug: git-submodules
 
 As I swim through the new waters, some nasty gotchas wait for me in the currents.

@@ -1,7 +1,7 @@
 Title: DevConf 2023: Talking about packaging in Fedora
 Date: 2023-07-15 20:12
 Category: Python
-Tags: EN, talks
+Tags: EN, talks, conferences
 Slug: devconf-2023-packaging-talk
 
 My daily job is all about packaging.

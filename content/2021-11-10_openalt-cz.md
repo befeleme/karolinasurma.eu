@@ -1,7 +1,7 @@
 Title: PyLadies at OpenAlt (CZ)
 Date: 2021-11-25 17:28
 Category: PyLadies
-Tags: EN, talks
+Tags: EN, talks, conferences
 Slug: pyladies-at-openalt-cz
 
 On the first November weekend Anežka Müller and me delivered a talk about PyLadies in the Czech Republic.

@@ -1,7 +1,7 @@
 Title: PyCon Namibia - Looking back at 2024
 Date: 2025-01-23 19:34
 Category: Python
-Tags: EN, community
+Tags: EN, community, conferences
 Slug: pycon-namibia-looking-back-at-2024
 
 ## Power of the community

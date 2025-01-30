@@ -1,6 +1,6 @@
 Title: What does it take to create a blog
 Date: 2021-02-09 21:11
-Category: Blogging
+Category: Currents
 Tags: pelican, coding, EN
 Slug: what-does-it-take-to-create-a-blog
 
