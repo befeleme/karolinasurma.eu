@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2025-01-23T19:34:00+01:00</updated><entry><title>PyCon Namibia - Looking back at 2024</title><link href="https://karolinasurma.eu/pycon-namibia-looking-back-at-2024.html" rel="alternate"></link><published>2025-01-23T19:34:00+01:00</published><updated>2025-01-23T19:34:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2025-01-23:/pycon-namibia-looking-back-at-2024.html</id><summary type="html">&lt;h2&gt;Power of the community&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2025-06-16T16:24:00+02:00</updated><entry><title>RPM macros cheatsheet</title><link href="https://karolinasurma.eu/rpm-macros-cheatsheet.html" rel="alternate"></link><published>2025-06-16T16:24:00+02:00</published><updated>2025-06-16T16:24:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2025-06-16:/rpm-macros-cheatsheet.html</id><summary type="html">&lt;h2&gt;Architecture macros&lt;/h2&gt;
+&lt;p&gt;Basic filtering&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;%ifarch
+%ifnarch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Macros applicable to Fedora&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;%ix86   i386 i486 i586 i686 pentium3 pentium4 athlon geode
+%x86_64 x86_64 x86_64_v2 x86_64_v3 x86_64_v4 amd64 em64t
+%arm64  aarch64
+%power64    ppc64 ppc64p7 ppc64le
+%riscv      %{riscv32} %{riscv64} %{riscv128}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;s390x doesn't have a macro, use the string.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/rpm-software-management/rpm/blob/f8fb0690582b60307c7ec6f8babb48d49b2578ad/macros.in#L1121"&gt;Full list of arch macros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Architecture macros&lt;/h2&gt;
+&lt;p&gt;Basic filtering&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;%ifarch
+%ifnarch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Macros applicable to Fedora&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;%ix86   i386 i486 i586 i686 pentium3 pentium4 athlon geode
+%x86_64 x86_64 x86_64_v2 x86_64_v3 x86_64_v4 amd64 em64t
+%arm64  aarch64
+%power64    ppc64 ppc64p7 ppc64le
+%riscv      %{riscv32} %{riscv64} %{riscv128}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;s390x doesn't have a macro, use the string.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/rpm-software-management/rpm/blob/f8fb0690582b60307c7ec6f8babb48d49b2578ad/macros.in#L1121"&gt;Full list of arch macros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note: &lt;code&gt;%{java_arches}&lt;/code&gt; is there if needed.&lt;/p&gt;</content><category term="Fedora"></category><category term="EN"></category><category term="fedora"></category><category term="tools"></category></entry><entry><title>PyCon Namibia - Looking back at 2024</title><link href="https://karolinasurma.eu/pycon-namibia-looking-back-at-2024.html" rel="alternate"></link><published>2025-01-23T19:34:00+01:00</published><updated>2025-01-23T19:34:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2025-01-23:/pycon-namibia-looking-back-at-2024.html</id><summary type="html">&lt;h2&gt;Power of the community&lt;/h2&gt;
 &lt;p&gt;Working with Python and largely in an open-source space brings perks.
 Python is truly unique for the communities that form around it.
 People crafting webs, moving science forward, powering machine learning, geeks
@@ -49,7 +85,7 @@ listen and learn from them, contribute if you can, don't be just a tourist.
 Python happens to be a great social glue!&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Conference" src="./images/windhoek-2024.JPG"&gt;
 &lt;img alt="Cheetah" src="./images/namibia-24.JPG"&gt;
-&lt;img alt="Flamingos" src="./images/flamingos-24.JPG"&gt;&lt;/p&gt;</content><category term="Python"></category><category term="EN"></category><category term="community"></category></entry><entry><title>fedrq - querying Fedora repositories</title><link href="https://karolinasurma.eu/fedrq-querying-fedora-repositories.html" rel="alternate"></link><published>2024-02-29T16:18:00+01:00</published><updated>2024-02-29T16:18:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2024-02-29:/fedrq-querying-fedora-repositories.html</id><summary type="html">&lt;h2&gt;Querying repositories&lt;/h2&gt;
+&lt;img alt="Flamingos" src="./images/flamingos-24.JPG"&gt;&lt;/p&gt;</content><category term="Python"></category><category term="EN"></category><category term="community"></category><category term="conferences"></category></entry><entry><title>fedrq - querying Fedora repositories</title><link href="https://karolinasurma.eu/fedrq-querying-fedora-repositories.html" rel="alternate"></link><published>2024-02-29T16:18:00+01:00</published><updated>2024-02-29T16:18:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2024-02-29:/fedrq-querying-fedora-repositories.html</id><summary type="html">&lt;h2&gt;Querying repositories&lt;/h2&gt;
 &lt;p&gt;Part of my $DAILYJOB is digging in multiple Fedora repositories.
 Every time I prepare a package update, I check whether the update has a potential to break something.
 Typically I set up lists of packages that require my package and build them in a isolated environment, before hitting …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Querying repositories&lt;/h2&gt;
@@ -225,11 +261,11 @@ Semantically the same as our notoriously horrible oneliner: &lt;code&gt;for pkg 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ fedrq wr -F narm:python3-sphinx python3-sphinx | grep &amp;quot;&amp;lt;&amp;quot;
 # only interested in runtime? -S means --nosrc
 $ fedrq wr -S -F narm:python3-sphinx python3-sphinx | grep &amp;quot;&amp;lt;&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Fedora"></category><category term="EN"></category></entry><entry><title>EuroPython in Prague</title><link href="https://karolinasurma.eu/europython-in-prague.html" rel="alternate"></link><published>2023-09-01T18:55:00+02:00</published><updated>2023-09-01T18:55:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2023-09-01:/europython-in-prague.html</id><summary type="html">&lt;p&gt;It almost feels as if this year was the first real one after Covid! 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Fedora"></category><category term="EN"></category><category term="fedora"></category><category term="tools"></category></entry><entry><title>EuroPython in Prague</title><link href="https://karolinasurma.eu/europython-in-prague.html" rel="alternate"></link><published>2023-09-01T18:55:00+02:00</published><updated>2023-09-01T18:55:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2023-09-01:/europython-in-prague.html</id><summary type="html">&lt;p&gt;It almost feels as if this year was the first real one after Covid! 
 When it comes to Python, 2023 has brought two big conferences to Prague: EuroPython and, after a covid break, PyCon CZ.&lt;/p&gt;
 &lt;p&gt;A short report of PyLadies' activities can be found on the &lt;a href="https://blog.python.cz/pyladies-byly-jsme-na-europythonu"&gt;official blog&lt;/a&gt; of the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It almost feels as if this year was the first real one after Covid! 
 When it comes to Python, 2023 has brought two big conferences to Prague: EuroPython and, after a covid break, PyCon CZ.&lt;/p&gt;
-&lt;p&gt;A short report of PyLadies' activities can be found on the &lt;a href="https://blog.python.cz/pyladies-byly-jsme-na-europythonu"&gt;official blog&lt;/a&gt; of the Czech Python community.&lt;/p&gt;</content><category term="PyLadies"></category><category term="EN"></category></entry><entry><title>DevConf 2023: Talking about packaging in Fedora</title><link href="https://karolinasurma.eu/devconf-2023-packaging-talk.html" rel="alternate"></link><published>2023-07-15T20:12:00+02:00</published><updated>2023-07-15T20:12:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2023-07-15:/devconf-2023-packaging-talk.html</id><summary type="html">&lt;p&gt;My daily job is all about packaging.
+&lt;p&gt;A short report of PyLadies' activities can be found on the &lt;a href="https://blog.python.cz/pyladies-byly-jsme-na-europythonu"&gt;official blog&lt;/a&gt; of the Czech Python community.&lt;/p&gt;</content><category term="PyLadies"></category><category term="EN"></category><category term="conferences"></category></entry><entry><title>DevConf 2023: Talking about packaging in Fedora</title><link href="https://karolinasurma.eu/devconf-2023-packaging-talk.html" rel="alternate"></link><published>2023-07-15T20:12:00+02:00</published><updated>2023-07-15T20:12:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2023-07-15:/devconf-2023-packaging-talk.html</id><summary type="html">&lt;p&gt;My daily job is all about packaging.
 I wouldn't have believed that such an invisible (for the outsider) topic can employ hundreds people all over the world.&lt;/p&gt;
 &lt;h2&gt;Preparations&lt;/h2&gt;
 &lt;p&gt;This year I wanted to talk at DevConf about something related to my work.
@@ -250,7 +286,7 @@ This was the first technical talk I wanted to deliver.&lt;/p&gt;
 &lt;h2&gt;Effects&lt;/h2&gt;
 &lt;p&gt;My talk was called &lt;em&gt;Fedora package update? Assess its impact in Copr&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://befeleme.github.io/devconf-2023/"&gt;Slides from the presentation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qiw773xeI7w?si=joVPxm3CyNPz1mCl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;&lt;/p&gt;</content><category term="Python"></category><category term="EN"></category><category term="talks"></category></entry><entry><title>PyLadies at DevConf</title><link href="https://karolinasurma.eu/pyladies-at-devconf.html" rel="alternate"></link><published>2022-02-11T18:16:00+01:00</published><updated>2022-02-11T18:16:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2022-02-11:/pyladies-at-devconf.html</id><summary type="html">&lt;p&gt;As winter came, we decided to keep the good streak of talks given and sent an application to the Czech &lt;a href="https://www.devconf.info/cz/"&gt;DevConf&lt;/a&gt;.
+&lt;p&gt;&lt;center&gt;&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qiw773xeI7w?si=joVPxm3CyNPz1mCl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;&lt;/p&gt;</content><category term="Python"></category><category term="EN"></category><category term="talks"></category><category term="conferences"></category></entry><entry><title>PyLadies at DevConf</title><link href="https://karolinasurma.eu/pyladies-at-devconf.html" rel="alternate"></link><published>2022-02-11T18:16:00+01:00</published><updated>2022-02-11T18:16:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2022-02-11:/pyladies-at-devconf.html</id><summary type="html">&lt;p&gt;As winter came, we decided to keep the good streak of talks given and sent an application to the Czech &lt;a href="https://www.devconf.info/cz/"&gt;DevConf&lt;/a&gt;.
 Again we teamed up with Anežka and delivered a presentation called &lt;a href="https://www.youtube.com/watch?v=_EuNGz8-Y3M&amp;amp;list=PLU1vS0speL2bf9Zfa0pHQLPBhEKbbbsua&amp;amp;index=85"&gt;PyLadies Community in Brno: Mutual Help to Grow&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_EuNGz8-Y3M" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;This time we focused on what drives the community builders …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As winter came, we decided to keep the good streak of talks given and sent an application to the Czech &lt;a href="https://www.devconf.info/cz/"&gt;DevConf&lt;/a&gt;.
@@ -265,7 +301,7 @@ There are organizers, coaches, lecturers (also called the &lt;em&gt;main coaches
 &lt;p&gt;We hoped for a real life talk on a hybrid conference which eventually wasn't possible.
 But the conference org team has no power over a global pandemic, so I'll just stop whining here.
 Kudos to the organizers who did a great job making it work virtually!&lt;/p&gt;
-&lt;p&gt;Much satisfaction, would do it again. :)&lt;/p&gt;</content><category term="PyLadies"></category><category term="EN"></category><category term="talks"></category></entry><entry><title>PyLadies at OpenAlt (CZ)</title><link href="https://karolinasurma.eu/pyladies-at-openalt-cz.html" rel="alternate"></link><published>2021-11-25T17:28:00+01:00</published><updated>2021-11-25T17:28:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-11-25:/pyladies-at-openalt-cz.html</id><summary type="html">&lt;p&gt;On the first November weekend Anežka Müller and me delivered a talk about PyLadies in the Czech Republic.
+&lt;p&gt;Much satisfaction, would do it again. :)&lt;/p&gt;</content><category term="PyLadies"></category><category term="EN"></category><category term="talks"></category><category term="conferences"></category><category term="community"></category></entry><entry><title>PyLadies at OpenAlt (CZ)</title><link href="https://karolinasurma.eu/pyladies-at-openalt-cz.html" rel="alternate"></link><published>2021-11-25T17:28:00+01:00</published><updated>2021-11-25T17:28:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-11-25:/pyladies-at-openalt-cz.html</id><summary type="html">&lt;p&gt;On the first November weekend Anežka Müller and me delivered a talk about PyLadies in the Czech Republic.
 We wanted to answer the questions people may have about what and why we do.
 We also shared some internal thoughts how we aim to build a sustainable format of community courses …&lt;/p&gt;</summary><content type="html">&lt;p&gt;On the first November weekend Anežka Müller and me delivered a talk about PyLadies in the Czech Republic.
 We wanted to answer the questions people may have about what and why we do.
@@ -283,7 +319,7 @@ but in the end it was more about our local Brno chapter.&lt;/p&gt;
 &lt;p&gt;Martina from Ostrava's PyLadies helped us preparing the talk outline.
 For the rest of the talk we teamed up with Anežka and I'm super grateful she agreed to do this together.
 I'm still impressed how smooth the later preparations were and I find Anežka's insights about the mission and vision especially valuable. 
-We should definitely do more in the future.&lt;/p&gt;</content><category term="PyLadies"></category><category term="EN"></category><category term="talks"></category></entry><entry><title>The debug tale</title><link href="https://karolinasurma.eu/the-debug-tale.html" rel="alternate"></link><published>2021-08-15T17:38:00+02:00</published><updated>2021-08-15T17:38:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-08-15:/the-debug-tale.html</id><summary type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
+We should definitely do more in the future.&lt;/p&gt;</content><category term="PyLadies"></category><category term="EN"></category><category term="talks"></category><category term="conferences"></category></entry><entry><title>The debug tale</title><link href="https://karolinasurma.eu/the-debug-tale.html" rel="alternate"></link><published>2021-08-15T17:38:00+02:00</published><updated>2021-08-15T17:38:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-08-15:/the-debug-tale.html</id><summary type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
 &lt;p&gt;The word anyone attempting programming knows from the almost beginning.
 You know, the moment you learn: if it doesn't work, look at the traceback, then add 153 &lt;code&gt;print&lt;/code&gt; statements, then try to understand where the heck you forgot the missing parenthesis.&lt;/p&gt;
 &lt;p&gt;When some clever programmers told me to start …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Debugging&lt;/h2&gt;
@@ -408,7 +444,7 @@ git submodule update
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;The empty folders shall be populated now. :)&lt;/p&gt;</content><category term="Git"></category><category term="EN"></category><category term="coding"></category></entry><entry><title>Edulog #4</title><link href="https://karolinasurma.eu/edulog-4.html" rel="alternate"></link><published>2021-04-05T12:49:00+02:00</published><updated>2021-04-05T12:49:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-04-05:/edulog-4.html</id><summary type="html">&lt;p&gt;That's been a ride. A bit of cold in the middle of March and diving deep in RPM ecosystem.
+&lt;p&gt;The empty folders shall be populated now. :)&lt;/p&gt;</content><category term="Git"></category><category term="EN"></category><category term="coding"></category><category term="tools"></category></entry><entry><title>Edulog #4</title><link href="https://karolinasurma.eu/edulog-4.html" rel="alternate"></link><published>2021-04-05T12:49:00+02:00</published><updated>2021-04-05T12:49:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2021-04-05:/edulog-4.html</id><summary type="html">&lt;p&gt;That's been a ride. A bit of cold in the middle of March and diving deep in RPM ecosystem.
 I tried to sink into &lt;a href="https://www.factorio.com/"&gt;Factorio&lt;/a&gt; to relax, but it keeps feeling as if I just went from one job to another. It has some real charm though, so I hope …&lt;/p&gt;</summary><content type="html">&lt;p&gt;That's been a ride. A bit of cold in the middle of March and diving deep in RPM ecosystem.
 I tried to sink into &lt;a href="https://www.factorio.com/"&gt;Factorio&lt;/a&gt; to relax, but it keeps feeling as if I just went from one job to another. It has some real charm though, so I hope I'll find my way around it.&lt;/p&gt;
 &lt;h2&gt;Accomplishments&lt;/h2&gt;
@@ -912,4 +948,4 @@ It makes me still a bit uneasy that I don't understand everything in the project
 Many other inspirations came from the open source projects on GitHub. 
 I took a look at deployment routines, went through some people's configurations and repository structures. &lt;/p&gt;
 &lt;p&gt;And all of this crash course took place in around a week.
-This time I feel like a winner :).&lt;/p&gt;</content><category term="Blogging"></category><category term="pelican"></category><category term="coding"></category><category term="EN"></category></entry></feed>
+This time I feel like a winner :).&lt;/p&gt;</content><category term="Currents"></category><category term="pelican"></category><category term="coding"></category><category term="EN"></category></entry></feed>
