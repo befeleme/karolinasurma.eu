@@ -97,6 +97,8 @@
 <p>s390x doesn't have a macro, use the string.</p>
 <p><a href="https://github.com/rpm-software-management/rpm/blob/f8fb0690582b60307c7ec6f8babb48d49b2578ad/macros.in#L1121">Full list of arch macros</a></p>
 <p>Note: <code>%{java_arches}</code> is there if needed.</p>
+<p>Super important note: If a package is noarch, you can't filter the arches with <code>%ifarch</code>/<code>%ifnarch</code>, <code>%ifarch</code> in such case only matches <code>noarch</code>.
+This only works correctly for arched packages.</p>
         </section>
 
         <br><br><br>
