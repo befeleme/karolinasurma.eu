@@ -27,3 +27,5 @@ s390x doesn't have a macro, use the string.
 
 Note: `%{java_arches}` is there if needed.
 
+Super important note: If a package is noarch, you can't filter the arches with `%ifarch`/`%ifnarch`, `%ifarch` in such case only matches `noarch`.
+This only works correctly for arched packages.
