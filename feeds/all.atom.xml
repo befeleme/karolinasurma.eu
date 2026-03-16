@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2025-07-28T18:00:00+02:00</updated><entry><title>PEP 639 adventures</title><link href="https://karolinasurma.eu/pep-639-adventures.html" rel="alternate"></link><published>2025-07-28T18:00:00+02:00</published><updated>2025-07-28T18:00:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2025-07-28:/pep-639-adventures.html</id><summary type="html">&lt;p&gt;With almost a year passing after the &lt;a href="https://peps.python.org/pep-0639/"&gt;PEP 639&lt;/a&gt; was accepted, I was pondering whether it makes sense to note down some thoughts on the process.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2026-03-16T09:35:00+01:00</updated><entry><title>Ostrava Python Pizza</title><link href="https://karolinasurma.eu/ostrava-python-pizza.html" rel="alternate"></link><published>2026-03-16T09:35:00+01:00</published><updated>2026-03-16T09:35:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2026-03-16:/ostrava-python-pizza.html</id><summary type="html">&lt;h2&gt;Pizza!&lt;/h2&gt;
+&lt;p&gt;On February 21st, a small conference was held in Ostrava.
+I really appreciate Czech Python community for regularly organizing events to bring together old and new folks,
+this time including a big portion of Polish friends.
+I haven't really programmed in Poland, ever, but with EuroPython happening this year …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Pizza!&lt;/h2&gt;
+&lt;p&gt;On February 21st, a small conference was held in Ostrava.
+I really appreciate Czech Python community for regularly organizing events to bring together old and new folks,
+this time including a big portion of Polish friends.
+I haven't really programmed in Poland, ever, but with EuroPython happening this year in Kraków, it feels I've got one foot in the doorstep of my homeland's communities. Leave through the door, come back through the window, it seems.&lt;/p&gt;
+&lt;h2&gt;The talk&lt;/h2&gt;
+&lt;p&gt;I delivered a talk offering a perspective on using LLMs for creating projects that are suited for one user only,
+and if such projects are mobile apps - also freeing oneself from
+the terror of the ad companies and other entities interested in highly personal data. 
+You can watch it here: &lt;a href="https://www.youtube.com/live/5AFVEZ9TZUs?si=_BD42mRN-8LR0liY&amp;amp;t=2177"&gt;I scratched my itch and so should you&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5AFVEZ9TZUs?si=Oqo97kzKzz_WSQg1&amp;amp;start=2173" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;One of the goals I had for this talk was to deliver it without slides. 
+This increased the stress a bit, adding to the already stressful state of not getting enough sleep the night before.
+I like the idea of media as augmentation, but not the backbone of the talk - I keep using less words in my slides, mostly for the audience to have something to hook at.
+In the end, it was quite a pleasant experience, and I'm going to work this direction more, whenever possible.&lt;/p&gt;
+&lt;p&gt;Many thanks to the Python community for organizing this get together!&lt;/p&gt;</content><category term="Python"></category><category term="EN"></category><category term="talks"></category><category term="conferences"></category><category term="community"></category></entry><entry><title>PEP 639 adventures</title><link href="https://karolinasurma.eu/pep-639-adventures.html" rel="alternate"></link><published>2025-07-28T18:00:00+02:00</published><updated>2025-07-28T18:00:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2025-07-28:/pep-639-adventures.html</id><summary type="html">&lt;p&gt;With almost a year passing after the &lt;a href="https://peps.python.org/pep-0639/"&gt;PEP 639&lt;/a&gt; was accepted, I was pondering whether it makes sense to note down some thoughts on the process.&lt;/p&gt;
 &lt;p&gt;But, since I want to keep a record (if only for my memory), let's dive straight in.&lt;/p&gt;
 &lt;h2&gt;PEP 639&lt;/h2&gt;
 &lt;p&gt;In Fedora, we wanted this …&lt;/p&gt;</summary><content type="html">&lt;p&gt;With almost a year passing after the &lt;a href="https://peps.python.org/pep-0639/"&gt;PEP 639&lt;/a&gt; was accepted, I was pondering whether it makes sense to note down some thoughts on the process.&lt;/p&gt;
@@ -72,7 +92,7 @@ The inspiration for the Fluxus layout comes from log28.&lt;/p&gt;
 I'd love to see more open source on mobile and on alternative repositories.
 Having control over the data on my phone has always been interesting to me, and I would prefer to both be able to read the source code of the apps easily, and create my own designs.
 I hope BeeWare can be one of the tools to democratize the app manufacturing.
-BeeWare let's you write native GUIs for many platforms: the same code runs both as Linux program, and an Android app.&lt;/p&gt;
+BeeWare lets you write native GUIs for many platforms: the same code runs both as Linux program, and an Android app.&lt;/p&gt;
 &lt;p&gt;The only limitation I encountered for the Android version of the app, is that I can't specify the path to store the exported data. And for some reason I can't access the path the app stores the data (Android is hellishly good at hiding the filesystem details from the user).&lt;/p&gt;
 &lt;h2&gt;Cursor AI with Claude Sonnet&lt;/h2&gt;
 &lt;p&gt;First, I started typing the skeleton of the app myself, but then I remembered we're in the middle of the AI revolution, so it's time to jump in.
