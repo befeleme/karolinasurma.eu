@@ -41,7 +41,7 @@ I love the idea of writing apps in Python!
 I'd love to see more open source on mobile and on alternative repositories.
 Having control over the data on my phone has always been interesting to me, and I would prefer to both be able to read the source code of the apps easily, and create my own designs.
 I hope BeeWare can be one of the tools to democratize the app manufacturing.
-BeeWare let's you write native GUIs for many platforms: the same code runs both as Linux program, and an Android app.
+BeeWare lets you write native GUIs for many platforms: the same code runs both as Linux program, and an Android app.
 
 The only limitation I encountered for the Android version of the app, is that I can't specify the path to store the exported data. And for some reason I can't access the path the app stores the data (Android is hellishly good at hiding the filesystem details from the user).
 
