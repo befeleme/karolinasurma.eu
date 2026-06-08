@@ -57,4 +57,4 @@ It's this kind of a job that works best in a highly focused environment and idea
 Will I do it again? Probably.
 But for now it's time to touch some grass.
 
-You can see some statistics assembled every night at https://status.fedoralovespython.org/
+You can see some statistics assembled every night at [the status page](https://status.fedoralovespython.org/).
