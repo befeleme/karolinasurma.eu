@@ -1,6 +1,6 @@
 Title: Python rebuilds in Fedora
 Date: 2026-06-08 17:48
-Category:
+Category: Fedora
 Tags: EN
 Slug: python-rebuilds-in-fedora
 
