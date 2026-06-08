@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2026-03-16T09:35:00+01:00</updated><entry><title>Ostrava Python Pizza</title><link href="https://karolinasurma.eu/ostrava-python-pizza.html" rel="alternate"></link><published>2026-03-16T09:35:00+01:00</published><updated>2026-03-16T09:35:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2026-03-16:/ostrava-python-pizza.html</id><summary type="html">&lt;h2&gt;Pizza!&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A blog</title><link href="https://karolinasurma.eu/" rel="alternate"></link><link href="https://karolinasurma.eu/feeds/all.atom.xml" rel="self"></link><id>https://karolinasurma.eu/</id><updated>2026-06-08T17:48:00+02:00</updated><entry><title>Python rebuilds in Fedora</title><link href="https://karolinasurma.eu/python-rebuilds-in-fedora.html" rel="alternate"></link><published>2026-06-08T17:48:00+02:00</published><updated>2026-06-08T17:48:00+02:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2026-06-08:/python-rebuilds-in-fedora.html</id><summary type="html">&lt;p&gt;Finally some time to gather thoughts about this big endeavour I take on every year.
+The third big rebuild of Python on my watch is slowly coming to an end.
+I start in October with first alpha release of a new Python and end in October the next year with …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Finally some time to gather thoughts about this big endeavour I take on every year.
+The third big rebuild of Python on my watch is slowly coming to an end.
+I start in October with first alpha release of a new Python and end in October the next year with the final release of Python and a release of Fedora.&lt;/p&gt;
+&lt;h2&gt;Why&lt;/h2&gt;
+&lt;p&gt;It's good for the &lt;strong&gt;community&lt;/strong&gt;: we can report and fix issues in libraries as soon as they appear.
+(Some upstream maintainers don't care about alphas and don't like our reports, so I try to remember which ones to avoid in the initial months).&lt;/p&gt;
+&lt;p&gt;It's good for &lt;strong&gt;CPython&lt;/strong&gt;: we can report regressions and bigger incompatibilities before they become a big issue.&lt;/p&gt;
+&lt;p&gt;It's good for &lt;strong&gt;Fedora&lt;/strong&gt;: one of its values is "first": it's always been a forefront Linux distribution when it comes to adopting novelties, its userbase is used to things changing and collaborates with upstreams by design (that's another Fedora's principle: upstream first).&lt;/p&gt;
+&lt;p&gt;It's good for &lt;strong&gt;Python maintainers&lt;/strong&gt; at my company: we know new Python plays well with the rest of the ecosystem. It will eventually become a part of the enterprise distribution, and by that time, it will be battle tested.&lt;/p&gt;
+&lt;h2&gt;How&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Koji monitoring dashboard" src="./images/bento-board.png"&gt;&lt;/p&gt;
+&lt;p&gt;There's a &lt;a href="https://copr.fedorainfracloud.org/coprs/"&gt;copr&lt;/a&gt; repository where the new Python acts like a main one.
+There I keep building down the dependency tree.
+We've got a &lt;a href="https://github.com/fedora-python/whatdoibuild"&gt;tool&lt;/a&gt; to query the repositories and find what is currently unblocked and can be built which is a cornerstone of the whole endeavour.
+Additional tooling consists of &lt;a href="https://github.com/befeleme/mini-mass-rebuild"&gt;more scripts&lt;/a&gt; to solve other arising issues. (I must not lose my zsh history).&lt;/p&gt;
+&lt;p&gt;Month after month, release after release, I keep reporting issues, fixing them if I can, unblocking chunks of the tree and tend to the whole thing.&lt;/p&gt;
+&lt;p&gt;With around 4000 Python packages in Fedora, I aim for having under 500 "waiting" before the actual rebuild.
+That's when the rebuild actually starts and is done in Fedora build system (Koji) side tag (temporary pocket for isolated changes, intended to be merged to the main flow).
+I test critical paths - groups of essential packages for different Fedora flavors, and at the end of the rebuild we spawn an OpenQA instance with our changes.
+The last steps require cooperation with the friendly Fedora QA and Infra teams, always flawless.&lt;/p&gt;
+&lt;p&gt;The last part, the Koji rebuild, is what we aim to do in the shortest time possible. It's the third time I have met with Miro at his place, where we set up a garden office and worked through the queue with enough of both the oxygen and caffeine each day. Bára's excellent cooking has sustained us each time and I can't be grateful enough for her work put in the yummy vegan dishes &amp;lt;3.&lt;/p&gt;
+&lt;h2&gt;Loose ends&lt;/h2&gt;
+&lt;p&gt;There's still a lot of tribal knowledge in the process.
+When the real rebuild happens, we just work. When we're done, we're exhausted and the last thing we want to do is documenting the steps.
+However, I do my best to update and extend a &lt;a href="https://hackmd.io/xsFrXJnaR_26QSzjBomCpg"&gt;team "wiki"&lt;/a&gt; about the whole process.&lt;/p&gt;
+&lt;p&gt;We only test one architecture: x86_64, but the rebuild happens on all arches supported on Fedora. This always causes some unexpected issues.
+However, bloating the copr repository with 5x as many chroots is too much of a tradeoff.&lt;/p&gt;
+&lt;p&gt;There's no way to "block" maintainers from updating their packages when we build things in the side tag. This always leads to inconsistencies and artificial bumping the package releases. Well.&lt;/p&gt;
+&lt;p&gt;The dashboard I was using this year needs some improvements. Overall it's a good addition to the process.&lt;/p&gt;
+&lt;h2&gt;Tight ends&lt;/h2&gt;
+&lt;p&gt;It's this kind of a job that works best in a highly focused environment and ideally in at least two people. I would be left in a much worse state if I was doing it alone in my home office, let alone in the actual one.&lt;/p&gt;
+&lt;p&gt;Will I do it again? Probably.
+But for now it's time to touch some grass.&lt;/p&gt;
+&lt;p&gt;You can see some statistics assembled every night at https://status.fedoralovespython.org/&lt;/p&gt;</content><category term="misc"></category><category term="EN"></category></entry><entry><title>Ostrava Python Pizza</title><link href="https://karolinasurma.eu/ostrava-python-pizza.html" rel="alternate"></link><published>2026-03-16T09:35:00+01:00</published><updated>2026-03-16T09:35:00+01:00</updated><author><name>Karo</name></author><id>tag:karolinasurma.eu,2026-03-16:/ostrava-python-pizza.html</id><summary type="html">&lt;h2&gt;Pizza!&lt;/h2&gt;
 &lt;p&gt;On February 21st, a small conference was held in Ostrava.
 I really appreciate Czech Python community for regularly organizing events to bring together old and new folks,
 this time including a big portion of Polish friends.
